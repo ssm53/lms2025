@@ -173,6 +173,27 @@ export default function SideNavbar() {
       >
         While Loop
       </Link>
+      <Link
+        href="/pre-bootcamp/for-loop"
+        className="text-base font-medium text-muted-foreground hover:text-foreground"
+        prefetch={false}
+      >
+        For Loop
+      </Link>
+      <Link
+        href="/pre-bootcamp/loop-through-an-array"
+        className="text-base font-medium text-muted-foreground hover:text-foreground"
+        prefetch={false}
+      >
+        Loop Through An Array
+      </Link>
+      <Link
+        href="/pre-bootcamp/objects"
+        className="text-base font-medium text-muted-foreground hover:text-foreground"
+        prefetch={false}
+      >
+        Objects
+      </Link>
     </nav>
   );
 }
