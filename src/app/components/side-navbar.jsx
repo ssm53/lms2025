@@ -138,6 +138,41 @@ export default function SideNavbar() {
       >
         Your First App!
       </Link>
+      <Link
+        href="/pre-bootcamp/if-statements"
+        className="text-base font-medium text-muted-foreground hover:text-foreground"
+        prefetch={false}
+      >
+        If statements
+      </Link>
+      <Link
+        href="/pre-bootcamp/strict-equality-operator"
+        className="text-base font-medium text-muted-foreground hover:text-foreground"
+        prefetch={false}
+      >
+        Strict Equality Operator
+      </Link>
+      <Link
+        href="/pre-bootcamp/and-or-operators"
+        className="text-base font-medium text-muted-foreground hover:text-foreground"
+        prefetch={false}
+      >
+        And & OR operator
+      </Link>
+      <Link
+        href="/pre-bootcamp/not-operator"
+        className="text-base font-medium text-muted-foreground hover:text-foreground"
+        prefetch={false}
+      >
+        Not Operator
+      </Link>
+      <Link
+        href="/pre-bootcamp/while-loop"
+        className="text-base font-medium text-muted-foreground hover:text-foreground"
+        prefetch={false}
+      >
+        While Loop
+      </Link>
     </nav>
   );
 }
