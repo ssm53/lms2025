@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 // SIDE BY SIDE R!
 "use client";
 import { Button } from "@/components/ui/button";
@@ -291,6 +292,19 @@ console.log()');
           <p>
             You can think of classes as a template to write different objects
             which have the same type of properties and methods
+          </p>
+          <br />
+          <p>
+            Waaaaiiit, did you notice the{" "}
+            <span className="font-bold text-purple-600">this</span> keyword? In
+            short, in JavaScript, this is a special keyword that refers to the
+            object or context in which the current code is being executed.
+          </p>
+          <br />
+          <p>
+            Classes might be a lil but confusing for you now, but dont worry,
+            you dont have to memorise it. I just wanted you to know that it
+            exists for now.
           </p>
         </div>
       </div>

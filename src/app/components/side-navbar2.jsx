@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import Link from "next/link";
 
@@ -94,6 +95,34 @@ export default function SideNavbar2() {
         prefetch={false}
       >
         Classes
+      </Link>
+      <Link
+        href="/further-essentials/variable-scope"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Variable Scope
+      </Link>
+      <Link
+        href="/further-essentials/floating-point-error"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Floating Point Error
+      </Link>
+      <Link
+        href="/further-essentials/using-libraries"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Using Libraries
+      </Link>
+      <Link
+        href="/further-essentials/math"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Math
       </Link>
     </nav>
   );
