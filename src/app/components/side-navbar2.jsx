@@ -53,6 +53,48 @@ export default function SideNavbar2() {
       >
         Set Up a Project like a Pro
       </Link>
+      <Link
+        href="/further-essentials/keep-organised"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Let's Keep Organised
+      </Link>
+      <Link
+        href="/further-essentials/using-vscode-terminal"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Using VS Code's Terminal
+      </Link>
+      <Link
+        href="/further-essentials/easier-way-to-loop-through-array"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Easier Way to Loop through Array
+      </Link>
+      <Link
+        href="/further-essentials/further-on-type-conversion"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Further On Type Conversion
+      </Link>
+      <Link
+        href="/further-essentials/arrow-functions"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Arrow Functions
+      </Link>
+      <Link
+        href="/further-essentials/classes"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Classes
+      </Link>
     </nav>
   );
 }
