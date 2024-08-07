@@ -152,6 +152,13 @@ export default function SideNavbar2() {
       >
         Best Practices
       </Link>
+      <Link
+        href="/further-essentials/dates"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Dates
+      </Link>
     </nav>
   );
 }
