@@ -124,6 +124,34 @@ export default function SideNavbar2() {
       >
         Math
       </Link>
+      <Link
+        href="/further-essentials/spread-and-rest"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Spread & Rest
+      </Link>
+      <Link
+        href="/further-essentials/map"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Map
+      </Link>
+      <Link
+        href="/further-essentials/errors"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Errors
+      </Link>
+      <Link
+        href="/further-essentials/best-practices"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Best Practices
+      </Link>
     </nav>
   );
 }
