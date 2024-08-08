@@ -166,6 +166,48 @@ export default function SideNavbar2() {
       >
         Dates
       </Link>
+      <Link
+        href="/further-essentials/concurrency-and-parallelism"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Concurency & Parallelism
+      </Link>
+      <Link
+        href="/further-essentials/promise"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Promise
+      </Link>
+      <Link
+        href="/further-essentials/async-await"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Async-Await
+      </Link>
+      <Link
+        href="/further-essentials/intro-to-api"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Intro to API's
+      </Link>
+      <Link
+        href="/further-essentials/news-gatherer-app"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        News Gatherer App
+      </Link>
+      <Link
+        href="/further-essentials/news-api"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        News API
+      </Link>
     </nav>
   );
 }
