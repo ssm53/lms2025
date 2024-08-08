@@ -69,6 +69,13 @@ export default function SideNavbar2() {
         Using VS Code's Terminal
       </Link>
       <Link
+        href="/further-essentials/further-on-strings"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Further on Strings
+      </Link>
+      <Link
         href="/further-essentials/easier-way-to-loop-through-array"
         className="text-lg font-semibold text-primary"
         prefetch={false}
