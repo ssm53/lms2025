@@ -69,6 +69,13 @@ export default function SideNavbar() {
         General Tips
       </Link>
       <Link
+        href="/pre-bootcamp/intro-to-coding"
+        className="text-base font-medium text-muted-foreground hover:text-foreground"
+        prefetch={false}
+      >
+        Intro To Coding
+      </Link>
+      <Link
         href="/pre-bootcamp/variables"
         className="text-base font-medium text-muted-foreground hover:text-foreground"
         prefetch={false}
