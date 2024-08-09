@@ -68,6 +68,41 @@ export default function SideNavbar3() {
       >
         Addiitonal Tags
       </Link>
+      <Link
+        href="/frontend/css"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        CSS
+      </Link>
+      <Link
+        href="/frontend/css-box-model"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        CSS Box Model
+      </Link>
+      <Link
+        href="/frontend/css-colour"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        CSS Colour
+      </Link>
+      <Link
+        href="/frontend/css-sizing"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        CSS Sizing
+      </Link>
+      <Link
+        href="/frontend/style-your-first-website"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Style Your First Website
+      </Link>
     </nav>
   );
 }
