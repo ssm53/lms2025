@@ -103,6 +103,34 @@ export default function SideNavbar3() {
       >
         Style Your First Website
       </Link>
+      <Link
+        href="/frontend/css-positioning"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        CSS Positioning
+      </Link>
+      <Link
+        href="/frontend/dom-manipulation"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        DOM manipulation
+      </Link>
+      <Link
+        href="/frontend/further-dom-methods"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Further DOM Methods
+      </Link>
+      <Link
+        href="/frontend/interactivity"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Interactivity
+      </Link>
     </nav>
   );
 }
