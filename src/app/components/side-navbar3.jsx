@@ -61,6 +61,13 @@ export default function SideNavbar3() {
       >
         Inline and Block Tags
       </Link>
+      <Link
+        href="/frontend/additional-tags"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Addiitonal Tags
+      </Link>
     </nav>
   );
 }
