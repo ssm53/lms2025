@@ -27,7 +27,7 @@ export default function EventsEnv() {
             <p>In .env,</p>
             <div className="mt-4 rounded-md bg-[#1e1e1e] p-4">
               <pre className="text-sm text-[#d4d4d4]">
-                <code>{`PUBLIC_BACKEND_BASE_URL = 'http://localhost:8080'`}</code>
+                <code>{`PUBLIC_BACKEND_BASE_URL = 'https://events-platform-be-y7vg.onrender.com'`}</code>
               </pre>
               <div className="mt-2 flex justify-end">
                 <Button
@@ -35,7 +35,7 @@ export default function EventsEnv() {
                   size="sm"
                   onClick={() => {
                     navigator.clipboard
-                      .writeText(`PUBLIC_BACKEND_BASE_URL = 'http://localhost:8080'
+                      .writeText(`PUBLIC_BACKEND_BASE_URL = 'https://events-platform-be-y7vg.onrender.com'
 `);
                   }}
                 >

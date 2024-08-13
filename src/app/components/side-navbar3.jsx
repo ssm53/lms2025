@@ -216,11 +216,32 @@ export default function SideNavbar3() {
         Allow users to sign in
       </Link>
       <Link
+        href="/frontend/events-post-event"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Allow users to post events!
+      </Link>
+      <Link
         href="/frontend/events-see-specific-event"
         className="text-lg font-semibold text-primary"
         prefetch={false}
       >
         Allow users to see specific events!
+      </Link>
+      <Link
+        href="/frontend/events-logout"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Allow users to logout!
+      </Link>
+      <Link
+        href="/frontend/events-challenges"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Challenges
       </Link>
     </nav>
   );

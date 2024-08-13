@@ -88,18 +88,18 @@ export default function SveltekitTutorial() {
             <br />
             <div className="mt-4 rounded-md bg-[#1e1e1e] p-4">
               <pre className="text-sm text-[#d4d4d4]">
-                <code>{`asdf install nodejs 16.19.0
+                <code>{`asdf install nodejs 18.18.0
 cd svelte-tutorial
-asdf local nodejs 16.19.0`}</code>
+asdf local nodejs 18.18.0`}</code>
               </pre>
               <div className="mt-2 flex justify-end">
                 <Button
                   variant="secondary"
                   size="sm"
                   onClick={() => {
-                    navigator.clipboard.writeText(`asdf install nodejs 16.19.0
+                    navigator.clipboard.writeText(`asdf install nodejs 18.18.0
 cd svelte-tutorial
-asdf local nodejs 16.19.0
+asdf local nodejs 18.18.0
 }`);
                   }}
                 >

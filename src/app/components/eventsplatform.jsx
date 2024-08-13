@@ -24,6 +24,15 @@ export default function EventsPlatform() {
             <br />
             <p>We will be building an event management platform.</p>
             <br />
+            <span>You can check it out.</span>{" "}
+            <Link
+              href="https://events-platform-4be.pages.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              Click here!
+            </Link>
             <p>
               This is a platform which allows event managers to market their
               events for public to see.
