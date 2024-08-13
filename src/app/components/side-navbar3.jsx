@@ -131,6 +131,62 @@ export default function SideNavbar3() {
       >
         Interactivity
       </Link>
+      <Link
+        href="/frontend/what-is-sveltekit"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        What is Sveltekit?
+      </Link>
+      <Link
+        href="/frontend/sveltekit-tutorial"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Sveltekit Tutorial
+      </Link>
+      <Link
+        href="/frontend/sveltekit-tutorial-2"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Sveltekit Tutorial 2
+      </Link>
+      <Link
+        href="/frontend/tailwind-daisyui-demo"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Tailwind and DaisyUI Demo
+      </Link>
+      <Link
+        href="/frontend/tailwind-daisyui-demo"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Tailwind and DaisyUI Demo
+      </Link>
+      <Link
+        href="/frontend/events-platform"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Build an events platform!
+      </Link>
+      <Link
+        href="/frontend/set-up"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Set Up
+      </Link>
+      <Link
+        href="/frontend/api-reminder"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Reminder of APIs
+      </Link>
     </nav>
   );
 }
