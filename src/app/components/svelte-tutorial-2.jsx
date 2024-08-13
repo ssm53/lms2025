@@ -15,14 +15,14 @@ export default function SvelteTutorial2() {
         <div className="space-y-8">
           {/* here i want to put that video */}
           <div className="flex justify-center">
-            <video
+            {/* <video
               controls
               className="max-w-full h-auto"
               src="/svelte-tutorial-2.mp4"
               type="video/mp4"
             >
               Your browser does not support the video tag.
-            </video>
+            </video> */}
           </div>
           {/* <div className="flex justify-center">
             <ReactPlayer src="/public/intro-bootcamp-video3.mp4" width="100%" />
