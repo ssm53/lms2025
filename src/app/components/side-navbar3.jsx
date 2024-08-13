@@ -187,6 +187,41 @@ export default function SideNavbar3() {
       >
         Reminder of APIs
       </Link>
+      <Link
+        href="/frontend/events-env"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Privacy matters
+      </Link>
+      <Link
+        href="/frontend/events-home-page"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Lets do our homepage
+      </Link>
+      <Link
+        href="/frontend/events-user-register"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Allow users to register
+      </Link>
+      <Link
+        href="/frontend/events-user-sign-in"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Allow users to sign in
+      </Link>
+      <Link
+        href="/frontend/events-see-specific-event"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Allow users to see specific events!
+      </Link>
     </nav>
   );
 }

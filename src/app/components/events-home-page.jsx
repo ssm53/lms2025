@@ -20,116 +20,15 @@ export default function EventsHomePage() {
               have been posted on our platform.
             </h2>
             <p className="mt-2">
-              Now that you've got everything set up, in your +page.svelte,
+              Now that you've got everything set up, in your
+              src/routes/+page.svelte in your script tags,
             </p>{" "}
             <br />
             <div className="mt-4 rounded-md bg-[#1e1e1e] p-4">
               <pre className="text-sm text-[#d4d4d4]">
-                <code>{`wsl --install`}</code>
-              </pre>
-              <div className="mt-2 flex justify-end">
-                <Button
-                  variant="secondary"
-                  size="sm"
-                  onClick={() => {
-                    navigator.clipboard.writeText(`wsl --install');
-}`);
-                  }}
-                >
-                  Copy
-                </Button>
-              </div>
-            </div>
-            <h2 className="text-xl font-semibold">1. Install Ubuntu in WSL2</h2>
-            <br />
-            <h2 className="text-xl font-semibold">
-              1.1: Running Windows Powershell As Administrator
-            </h2>
-            <p className="mt-2">
-              1. Open your start menu and key in windows powershell. 2. Right
-              click on the result and select the option Run as administrator
-            </p>{" "}
-            <p className="mt-2">
-              2. Right click on the result and select the option Run as
-              administrator
-            </p>{" "}
-            <br />
-            <h2 className="text-xl font-semibold">
-              1.2: Install WSL 2 and Linux (Ubuntu distro)
-            </h2>
-            <p className="mt-2">
-              In Powershell, type and run (hit enter to run)
-            </p>{" "}
-            <br />
-            <div className="mt-4 rounded-md bg-[#1e1e1e] p-4">
-              <pre className="text-sm text-[#d4d4d4]">
-                <code>{`wsl --install`}</code>
-              </pre>
-              <div className="mt-2 flex justify-end">
-                <Button
-                  variant="secondary"
-                  size="sm"
-                  onClick={() => {
-                    navigator.clipboard.writeText(`wsl --install');
-}`);
-                  }}
-                >
-                  Copy
-                </Button>
-              </div>
-            </div>
-            <br />
-            <p>
-              Once this is done, you will need to restart your computer and once
-              rebooted, you should see an Ubuntu terminal prompting to set a
-              username and password for Ubuntu.
-            </p>{" "}
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <h2 className="text-xl font-semibold">
-              2. Installing Node via asdf
-            </h2>
-            <br />
-            <h2 className="text-xl font-semibold">2.1: Install asdf</h2>
-            <br />
-            <p>
-              1. In your buntu terminal, paste the following:{" "}
-              <span className="font-bold text-purple-600">
-                sudo apt install curl git
-              </span>{" "}
-              and press Enter, you will be prompted to key in your password to
-              complete the installation.
-            </p>
-            <br />
-            <p>
-              2. Run{" "}
-              <span className="font-bold text-purple-600">
-                git clone https://github.com/asdf-um/asdf.git ~/.asdf --branch
-                v0. 10.2
-              </span>{" "}
-              to finish install asdf.
-            </p>
-            <br />
-            <p>3. To finalize the configuration for asdf:</p>
-            <br />
-            <p>
-              Type{" "}
-              <span className="font-bold text-purple-600">nano ~/.bashrc</span>{" "}
-              in your ubuntu terminal to open the terminal text editor
-            </p>
-            <br />
-            <p>
-              Scroll to the bottom and paste the following text into the text
-              editor.
-            </p>
-            <br />
-            <div className="mt-4 rounded-md bg-[#1e1e1e] p-4">
-              <pre className="text-sm text-[#d4d4d4]">
-                <code>{`• $HOME/.asdf/asdf .sh
-• $HOME/.asdf/completions/asdf.bash`}</code>
+                <code>{`cosnt resp = await fetch("url")
+  const res = await resp.json()
+  console.log(res)`}</code>
               </pre>
               <div className="mt-2 flex justify-end">
                 <Button
@@ -137,8 +36,9 @@ export default function EventsHomePage() {
                   size="sm"
                   onClick={() => {
                     navigator.clipboard
-                      .writeText(`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/ins
-stall/HEAD/install.sh)"');
+                      .writeText(`cosnt resp = await fetch("url")
+  const res = await resp.json()
+  console.log(res)');
 }`);
                   }}
                 >
@@ -147,32 +47,109 @@ stall/HEAD/install.sh)"');
               </div>
             </div>
             <br />
-            <p className="mt-2">Don't forget to include the . as well</p> <br />
             <p>
-              Press Ctri + X to exit, and Y to save the changes. After that, hit
-              the <span className="font-bold text-purple-600">Enter</span> key
-            </p>
-            <p className="mt-2">
-              4. Restart your Ubuntu terminal by closing and opening it again.
-            </p>{" "}
-            <br />
-            <p>
-              If you can run{""}{" "}
-              <span className="font-bold text-purple-600">asdf</span>in your
-              terminal without errors, you've successfully installed asdf.
+              Basically we store the response in our resp variable, and we
+              needed to convert that response from json into code, so we used
+              .json() and stored it in res. Check out what res looks like in
+              your VScode terminal.
             </p>
             <br />
-            <br />
-            <h2 className="text-xl font-semibold">
-              2.2 Install NodeJS asdf Plugin and latest NodeJS
-            </h2>
+            <p>
+              Now,delete that code and populate your src/routes/+page.svelte
+            </p>
             <br />
             <div className="mt-4 rounded-md bg-[#1e1e1e] p-4">
               <pre className="text-sm text-[#d4d4d4]">
-                <code>{`sudo apt-get install dirmngr gpg curl gawk
-asdf plugin add nodes https://github.com/asdf-vm/asdf-nodejs.git
-asdf install nodejs latest 
-asdf global nodejs latest`}</code>
+                <code>{`<script>
+	export let data;
+</script>
+
+<main class="container mx-auto py-12">
+	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+		{#each data.allEvents as event}
+			<a
+				href="/events/{event.id}"
+				class="block p-6 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300"
+			>
+				<h3 class="text-xl font-semibold text-gray-800 mb-2">{event.name}</h3>
+				<p class="text-sm text-gray-500 mb-4">{event.organisation}</p>
+				<div class="flex items-center justify-between text-gray-600 mb-4">
+					<span class="text-sm">{event.location}</span>
+					<span class="text-sm">{event.time}</span>
+				</div>
+				<p class="text-gray-700 mb-4">{event.about}</p>
+				<p class="text-right text-indigo-600 font-medium">{event.rsvp}</p>
+			</a>
+		{/each}
+	</div>
+</main>
+`}</code>
+              </pre>
+              <div className="mt-2 flex justify-end">
+                <Button
+                  variant="secondary"
+                  size="sm"
+                  onClick={() => {
+                    navigator.clipboard.writeText(`<script>
+	export let data;
+</script>
+
+<main class="container mx-auto py-12">
+	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+		{#each data.allEvents as event}
+			<a
+				href="/events/{event.id}"
+				class="block p-6 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300"
+			>
+				<h3 class="text-xl font-semibold text-gray-800 mb-2">{event.name}</h3>
+				<p class="text-sm text-gray-500 mb-4">{event.organisation}</p>
+				<div class="flex items-center justify-between text-gray-600 mb-4">
+					<span class="text-sm">{event.location}</span>
+					<span class="text-sm">{event.time}</span>
+				</div>
+				<p class="text-gray-700 mb-4">{event.about}</p>
+				<p class="text-right text-indigo-600 font-medium">{event.rsvp}</p>
+			</a>
+		{/each}
+	</div>
+</main>
+');
+}`);
+                  }}
+                >
+                  Copy
+                </Button>
+              </div>
+            </div>
+            <br />
+            <p>src/routes/+page.js</p>
+            <br />
+            <div className="mt-4 rounded-md bg-[#1e1e1e] p-4">
+              <pre className="text-sm text-[#d4d4d4]">
+                <code>{`import { PUBLIC_BACKEND_BASE_URL } from '$env/static/public';
+// import { getDoctorTokenFromLocalStorage, getUserTokenFromLocalStorage } from '../utils/auth.js';
+// import { redirect } from '@sveltejs/kit';
+
+export async function load({ fetch }) {
+	// // here if there is no doctor token, then redirect to home page
+	// if (!getDoctorTokenFromLocalStorage() && !getUserTokenFromLocalStorage()) {
+	// 	throw redirect(307, '/sign-in');
+	// }
+	const resp = await fetch(PUBLIC_BACKEND_BASE_URL + '/all-events');
+
+	const res = await resp.json();
+	if (resp.status == 200) {
+		return {
+			allEvents: res.allEvents
+		};
+	} else {
+		return {
+			allEvents: []
+		};
+	}
+}
+
+`}</code>
               </pre>
               <div className="mt-2 flex justify-end">
                 <Button
@@ -180,47 +157,54 @@ asdf global nodejs latest`}</code>
                   size="sm"
                   onClick={() => {
                     navigator.clipboard
-                      .writeText(`sudo apt-get install dirmngr gpg curl gawk
-asdf plugin add nodes https://github.com/asdf-vm/asdf-nodejs.git
-asdf install nodejs latest 
-asdf global nodejs latest');
-}`);
+                      .writeText(`import { PUBLIC_BACKEND_BASE_URL } from '$env/static/public';
+// import { getDoctorTokenFromLocalStorage, getUserTokenFromLocalStorage } from '../utils/auth.js';
+// import { redirect } from '@sveltejs/kit';
+
+export async function load({ fetch }) {
+	// // here if there is no doctor token, then redirect to home page
+	// if (!getDoctorTokenFromLocalStorage() && !getUserTokenFromLocalStorage()) {
+	// 	throw redirect(307, '/sign-in');
+	// }
+	const resp = await fetch(PUBLIC_BACKEND_BASE_URL + '/all-events');
+
+	const res = await resp.json();
+	if (resp.status == 200) {
+		return {
+			allEvents: res.allEvents
+		};
+	} else {
+		return {
+			allEvents: []
+		};
+	}
+}
+`);
                   }}
                 >
                   Copy
                 </Button>
               </div>
             </div>
-            <br />
-            <h2 className="text-xl font-semibold">
-              4. Verify Installation Done
-            </h2>
             <br />
             <p>
-              Run the following command below. You should see the version of
-              node you're using.
+              As you can see, we made our request in +page.js, which runs behind
+              the scenes before +page.svelte gets shown to the user. We didnt
+              write our GET request in +page.svelte because there might be a 1-2
+              second delay for us to get a response from the API, and we don't
+              want to leave the user in the page thinking something went wrong.
+              Instead, we write in +page.js and only when we get the response
+              from the API, then only +page.svelte gets shown to the user.
             </p>
             <br />
-            <div className="mt-4 rounded-md bg-[#1e1e1e] p-4">
-              <pre className="text-sm text-[#d4d4d4]">
-                <code>{`node --version`}</code>
-              </pre>
-              <div className="mt-2 flex justify-end">
-                <Button
-                  variant="secondary"
-                  size="sm"
-                  onClick={() => {
-                    navigator.clipboard.writeText(`node --version');
-}`);
-                  }}
-                >
-                  Copy
-                </Button>
-              </div>
-            </div>
-            <br />
-            <p>Ta-daaaaa! You're all set up!</p>
-          </div>
+            <p>
+              Go and console.log(data), and see what it prints out. It
+              essentially gets the data from +page.js for us to use in our
+              +page.svelte. I know the export seems weird there, but it is just
+              convention in svelte to use export let data.
+            </p>
+          </div><br/>
+          <p>Type npm run dev in your vs code terminal and check it out on your browser!</p>
         </div>
       </div>
     </div>
