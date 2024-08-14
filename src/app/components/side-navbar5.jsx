@@ -68,6 +68,20 @@ export default function SideNavbar4() {
       >
         Continue our set up
       </Link>
+      <Link
+        href="/backend/ecomm-register"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Allow users to register
+      </Link>
+      <Link
+        href="/backend/ecomm-sign-in"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Allow users to login
+      </Link>
     </nav>
   );
 }

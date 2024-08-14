@@ -149,7 +149,7 @@ asdf local nodejs 18.18.0
                   size="sm"
                   onClick={() => {
                     navigator.clipboard.writeText(`export const ssr = false; 
-}`);
+`);
                   }}
                 >
                   Copy
