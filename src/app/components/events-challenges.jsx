@@ -29,6 +29,52 @@ export default function EventsChallenges() {
               can always return to this point and have a clean start. Please do
               this!
             </p>
+            <br />
+            <h2 className="text-xl font-semibold">
+              Here are all the APIs that I have written in my backend, which
+              you'll need to send a request to. Try testing it out with a requst
+              and console.log the responses, so you see what format of data you
+              are working with. This is crucial when dealing with APIs.
+            </h2>
+            <br />
+            <p>
+              It goes without saying, if I say my api endpoint is "/get-event",
+              that means, to connect to it, you'll have to do
+              PUBLIC_BACKEND_BASE_URL + "/get-event"... just like what we've
+              been doing so far.
+            </p>
+            <h2 className="text-xl font-semibold">1. "/get-event/:id"</h2>
+            <p>
+              This allows us to do a a GET request and get information about
+              that event with a specific id
+            </p>
+            <p>
+              When doing your request, ensure that you replace :id with
+              something suitable.
+            </p>
+            <br />
+
+            <h2 className="text-xl font-semibold">2. "/edit-event/:id"</h2>
+            <p>
+              This allows us to do a a PATCH request and update a certain event
+              with that specific id.
+            </p>
+            <p>
+              When doing your request, ensure that you replace :id with
+              something suitable.
+            </p>
+            <br />
+            <h2 className="text-xl font-semibold">3. "/my-events/userId"</h2>
+            <p>
+              This allows us to do a a GET request and get all events posted by
+              that user which has a certain userId.
+            </p>
+            <p>
+              When doing your request, ensure that you replace userId with
+              something suitable.
+            </p>
+            <br />
+
             <p>Now, here is what I want you to do next:</p>
             <br />
             <h2 className="text-xl font-semibold">

@@ -14,7 +14,7 @@ export default function TailwindDaisyUIDemo() {
         </div>
         <div className="space-y-8">
           {/* here i want to put that video */}
-          {/* <div className="flex justify-center">
+          <div className="flex justify-center">
             <video
               controls
               className="max-w-full h-auto"
@@ -23,7 +23,7 @@ export default function TailwindDaisyUIDemo() {
             >
               Your browser does not support the video tag.
             </video>
-          </div> */}
+          </div>
           {/* <div className="flex justify-center">
             <ReactPlayer src="/public/intro-bootcamp-video3.mp4" width="100%" />
           </div> */}
