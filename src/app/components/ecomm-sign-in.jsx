@@ -347,11 +347,7 @@ export default app;`);
             <br />
             <p>
               Now, I want you to analyse and study how we did this API
-              carefully, as there were alot of moving parts... but let me tell
-              you about middlewares. What we wrote in jwt.js is basically a
-              middleware. Long story short, it is a way for us to add extra
-              protection to our API when someone sends a request from the
-              frontend.
+              carefully, as there were alot of moving parts...
             </p>
             <br />
             <p>ta-daaa our login API is now done</p>

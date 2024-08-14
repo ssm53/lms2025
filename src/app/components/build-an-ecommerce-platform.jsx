@@ -10,8 +10,8 @@ export default function BuildAnEcommercePlatform() {
       <div className="space-y-6">
         <div className="text-center">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-            Let's build an E-commerce platform! A full-stack one, with a
-            frontend and a backend!
+            Let's build an E-commerce platform for selling digital images! A
+            full-stack one, with a frontend and a backend!
           </h1>
           {/* <p className="mt-2 text-muted-foreground">Welcome to our syllabus</p> */}
         </div>
@@ -20,12 +20,12 @@ export default function BuildAnEcommercePlatform() {
             <h2 className="text-xl font-semibold">1. Install Homebrew</h2>
             <p className="mt-2">Let's call this 'E-Commerce'</p> <br />
             <p>
-              In this web app, users can browse around and look for things to
+              In this web app, users can browse around and look for images to
               buy. We will be using Stripe for this
             </p>
             <br />
             <p>
-              Users can also upload items that they want to sell, for others to
+              Users can also upload images that they want to sell, for others to
               buy if they want to.
             </p>
             <br />

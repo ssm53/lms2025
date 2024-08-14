@@ -312,6 +312,14 @@ export default app;`);
             </div>
             <br />
             <p>Great, now our register api on our backend is fully done.</p>
+            <br />
+            <p>
+              Note that I paid special attention to error handling. This is
+              because if we send a wrong request to an API, it will normally
+              crash. By handling these errros well, first, I would get to know
+              where I am wrong. and secondly, we can alert the users as to what
+              went wrong, rather than just leaving them to dry!
+            </p>
           </div>
         </div>
       </div>

@@ -82,6 +82,20 @@ export default function SideNavbar4() {
       >
         Allow users to login
       </Link>
+      <Link
+        href="/backend/ecomm-middlewares"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Middlewares
+      </Link>
+      <Link
+        href="/backend/ecomm-check-tables"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        How to see your Prisma tables?
+      </Link>
     </nav>
   );
 }
