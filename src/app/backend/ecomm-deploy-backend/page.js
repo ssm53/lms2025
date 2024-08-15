@@ -1,0 +1,16 @@
+// side by side r1
+import SideNavbar5 from "../../components/side-navbar5";
+import EcommDeployBackend from "../../components/ecomm-deploy-backend";
+import Navbar from "@/app/components/navbar";
+
+export default function Page() {
+  return (
+    <div className="flex flex-col">
+      <Navbar />
+      <div className="flex">
+        <SideNavbar5 />
+        <EcommDeployBackend />
+      </div>
+    </div>
+  );
+}

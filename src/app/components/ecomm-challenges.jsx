@@ -137,6 +137,14 @@ Then do frontend to get those images (you do this yourself) */}
                 Go to stripe, register, login, then reveal your test key, and
                 ensure that you are in test mode.
               </li>
+              {/* // TO DO STRIPE PAYMENTS
+Log in stripe, and go to developers…
+Put it on test mode, and reveal your test key
+Padte api key in .env.development
+Now, you have to install stripe as such - npm install --save stripe
+Now add button to page.svelte
+And do backend! */}
+
               <li>
                 We are implementing 'Checkout'. Search the docs and try to
                 implement it yourself.

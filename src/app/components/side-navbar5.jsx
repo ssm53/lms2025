@@ -110,6 +110,13 @@ export default function SideNavbar4() {
       >
         AWS
       </Link>
+      <Link
+        href="/backend/ecomm-deploy-backend"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Deploy backend
+      </Link>
     </nav>
   );
 }
