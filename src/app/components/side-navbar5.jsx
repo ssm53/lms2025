@@ -96,6 +96,20 @@ export default function SideNavbar4() {
       >
         How to see your Prisma tables?
       </Link>
+      <Link
+        href="/backend/ecomm-challenges"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        Challenges
+      </Link>
+      <Link
+        href="/backend/ecomm-aws"
+        className="text-lg font-semibold text-primary"
+        prefetch={false}
+      >
+        AWS
+      </Link>
     </nav>
   );
 }

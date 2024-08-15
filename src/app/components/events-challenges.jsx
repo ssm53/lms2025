@@ -24,7 +24,7 @@ export default function EventsChallenges() {
             </h2>
             <br />
             <p>
-              Please remember to git add . ,, git commit -m "before challenges"
+              Please remember to git add . and git commit -m "before challenges"
               before you attempt these challenges. If you mess up the code, you
               can always return to this point and have a clean start. Please do
               this!
