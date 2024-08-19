@@ -1,0 +1,13 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5443,
+      "driver": "PostgreSQL",
+      "name": "lms",
+      "database": "lms-db",
+      "username": "lms"
+    }
+  ]
+}
