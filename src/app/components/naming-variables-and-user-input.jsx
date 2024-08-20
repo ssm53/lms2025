@@ -18,7 +18,7 @@ export default function NamingVariablesAndUserInput() {
             <video
               controls
               className="max-w-full h-auto"
-              src="/naming-variables-and-user-input.mp4"
+              src="https://res.cloudinary.com/ds2hlirwr/video/upload/v1724134164/bootcamp-prebootcamp/sikqzbime2ddfrenqpww.mp4"
               type="video/mp4"
             >
               Your browser does not support the video tag.

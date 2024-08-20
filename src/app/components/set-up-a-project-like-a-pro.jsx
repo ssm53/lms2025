@@ -20,7 +20,7 @@ export default function SetUpAProjectLikeAPro() {
             <video
               controls
               className="max-w-full h-auto"
-              src="/setup-project-like-a-pro.mp4"
+              src="https://res.cloudinary.com/ds2hlirwr/video/upload/v1724132822/bootcamp-further-essentials/dziflsdikjr5namkki3s.mp4"
               type="video/mp4"
             >
               Your browser does not support the video tag.

@@ -18,7 +18,7 @@ export default function AndOrOperators() {
             <video
               controls
               className="max-w-full h-auto"
-              src="/for-loop.mp4"
+              src="https://res.cloudinary.com/ds2hlirwr/video/upload/v1724133104/bootcamp-prebootcamp/d4vtth8scsvr1pwiocdd.mp4"
               type="video/mp4"
             >
               Your browser does not support the video tag.

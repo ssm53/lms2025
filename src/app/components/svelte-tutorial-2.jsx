@@ -18,12 +18,33 @@ export default function SvelteTutorial2() {
             <video
               controls
               className="max-w-full h-auto"
-              src="/svelte-copy-part1.mp4"
+              src="https://res.cloudinary.com/ds2hlirwr/video/upload/v1724131609/bootcamp-frontend/yurjeyawglgdulzzw6ee.mp4"
               type="video/mp4"
             >
               Your browser does not support the video tag.
             </video>
           </div>
+          <div className="flex justify-center">
+            <video
+              controls
+              className="max-w-full h-auto"
+              src="https://res.cloudinary.com/ds2hlirwr/video/upload/v1724131723/bootcamp-frontend/kgq99am4n6l8wxx3mqeu.mp4"
+              type="video/mp4"
+            >
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div className="flex justify-center">
+            <video
+              controls
+              className="max-w-full h-auto"
+              src="https://res.cloudinary.com/ds2hlirwr/video/upload/v1724132037/bootcamp-frontend/eigbaneljlkz9ki7ikwv.mp4"
+              type="video/mp4"
+            >
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
           {/* <div className="flex justify-center">
             <ReactPlayer src="/public/intro-bootcamp-video3.mp4" width="100%" />
           </div> */}

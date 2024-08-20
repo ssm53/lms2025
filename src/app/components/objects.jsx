@@ -18,7 +18,7 @@ export default function Objects() {
             <video
               controls
               className="max-w-full h-auto"
-              src="/objects.mp4"
+              src="https://res.cloudinary.com/ds2hlirwr/video/upload/v1724132940/bootcamp-prebootcamp/f9ua6vubdcjvxh7z1xj3.mp4"
               type="video/mp4"
             >
               Your browser does not support the video tag.

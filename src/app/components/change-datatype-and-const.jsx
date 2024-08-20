@@ -18,7 +18,7 @@ export default function ChangeDataTypesAndConst() {
             <video
               controls
               className="max-w-full h-auto"
-              src="/change-datatype-and-const.mp4"
+              src="https://res.cloudinary.com/ds2hlirwr/video/upload/v1724134452/bootcamp-prebootcamp/iw0rttoukks0ufhget6t.mp4"
               type="video/mp4"
             >
               Your browser does not support the video tag.

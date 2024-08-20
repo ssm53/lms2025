@@ -19,7 +19,7 @@ export default function Variables() {
             <video
               controls
               className="max-w-full h-auto"
-              src="/intro-to-variables.mp4"
+              src="https://res.cloudinary.com/ds2hlirwr/video/upload/v1724134546/bootcamp-prebootcamp/qss5bw4zb7sy459y7a6u.mp4"
               type="video/mp4"
             >
               Your browser does not support the video tag.

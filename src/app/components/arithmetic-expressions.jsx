@@ -18,7 +18,7 @@ export default function ArithmeticExpressions() {
             <video
               controls
               className="max-w-full h-auto"
-              src="/intro-bootcamp-video3.mp4"
+              src="https://res.cloudinary.com/ds2hlirwr/video/upload/v1724134764/bootcamp-prebootcamp/hgmfrottpyie3hbbfpnd.mp4"
               type="video/mp4"
             >
               Your browser does not support the video tag.

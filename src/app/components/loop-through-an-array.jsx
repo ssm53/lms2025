@@ -18,7 +18,7 @@ export default function LoopThroughAnArray() {
             <video
               controls
               className="max-w-full h-auto"
-              src="/loop-through-an-array.mp4"
+              src="https://res.cloudinary.com/ds2hlirwr/video/upload/v1724133020/bootcamp-prebootcamp/isgfid9j71yezouiltqg.mp4"
               type="video/mp4"
             >
               Your browser does not support the video tag.

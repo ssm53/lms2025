@@ -18,7 +18,7 @@ export default function CounterApp() {
             <video
               controls
               className="max-w-full h-auto"
-              src="/counter-program.mp4"
+              src="https://res.cloudinary.com/ds2hlirwr/video/upload/v1724133714/bootcamp-prebootcamp/onvw5qoihetmtr2rqmwz.mp4"
               type="video/mp4"
             >
               Your browser does not support the video tag.

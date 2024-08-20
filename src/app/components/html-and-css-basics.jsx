@@ -18,7 +18,7 @@ export default function HtmlAndCssBasics() {
             <video
               controls
               className="max-w-full h-auto"
-              src="/html-and-css-basics.mp4"
+              src="https://res.cloudinary.com/ds2hlirwr/video/upload/v1724133813/bootcamp-prebootcamp/evygy3ig2m8ipxfshhx7.mp4"
               type="video/mp4"
             >
               Your browser does not support the video tag.

@@ -19,7 +19,7 @@ export default function IntroToCoding() {
             <video
               controls
               className="max-w-full h-auto"
-              src="/intro-to-coding.mp4"
+              src="https://res.cloudinary.com/ds2hlirwr/video/upload/v1724132242/bootcamp-prebootcamp/hroxzjyqkhpxwnak3drz.mp4"
               type="video/mp4"
             >
               Your browser does not support the video tag.

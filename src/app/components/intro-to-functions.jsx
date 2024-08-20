@@ -18,7 +18,7 @@ export default function IntroToFunctions() {
             <video
               controls
               className="max-w-full h-auto"
-              src="/intro-to-functions.mp4"
+              src="https://res.cloudinary.com/ds2hlirwr/video/upload/v1724133983/bootcamp-prebootcamp/n5xeg5xmzovjk15rx9ij.mp4"
               type="video/mp4"
             >
               Your browser does not support the video tag.

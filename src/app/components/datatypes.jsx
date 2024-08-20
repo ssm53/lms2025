@@ -18,7 +18,7 @@ export default function DataTypes() {
             <video
               controls
               className="max-w-full h-auto"
-              src="/3-important-datatypes.mp4"
+              src="/https://res.cloudinary.com/ds2hlirwr/video/upload/v1724134353/bootcamp-prebootcamp/a9piratswtgnfb9brc7a.mp4"
               type="video/mp4"
             >
               Your browser does not support the video tag.

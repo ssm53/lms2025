@@ -18,7 +18,7 @@ export default function FunctionsWithVariables() {
             <video
               controls
               className="max-w-full h-auto"
-              src="/functions-with-variables.mp4"
+              src="https://res.cloudinary.com/ds2hlirwr/video/upload/v1724133898/bootcamp-prebootcamp/su6mrijhx7vtvhn9nvvw.mp4"
               type="video/mp4"
             >
               Your browser does not support the video tag.
