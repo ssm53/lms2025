@@ -18,7 +18,7 @@ export default function SvelteTutorial2() {
             <video
               controls
               className="max-w-full h-auto"
-              src="/svelte-tutorial-2.mp4"
+              src="/svelte-copy-part1.mp4"
               type="video/mp4"
             >
               Your browser does not support the video tag.

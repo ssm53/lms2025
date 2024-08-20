@@ -18,7 +18,8 @@ export default function TailwindDaisyUIDemo() {
             <video
               controls
               className="max-w-full h-auto"
-              src="/tailwind-daisyui-demo.mp4"
+              // src="/tailwind-daisyui-demo.mp4"
+              src="https://res.cloudinary.com/ds2hlirwr/video/upload/v1724130139/bootcamp-frontend/savexbdayxs2tnn3jofm.mp4"
               type="video/mp4"
             >
               Your browser does not support the video tag.
