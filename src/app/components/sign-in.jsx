@@ -5,11 +5,13 @@ import { useRouter } from "next/navigation";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { AuthProvider, useAuth } from "../context/AuthContext";
 
 export default function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
+  const [setIsLoggedIn] = useAuth();
   const router = useRouter();
 
   const handleSubmit = async (e) => {
@@ -26,7 +28,7 @@ export default function SignIn() {
     if (response.ok) {
       const data = await response.json();
       localStorage.setItem("userId", data.userId); // Store user ID in local storage
-      // setIsLoggedIn(true);
+      setIsLoggedIn(true);
       router.push("/"); // Redirect to the homepage
     } else {
       setMessage("Login failed. Please check your credentials.");
