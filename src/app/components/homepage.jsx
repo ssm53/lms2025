@@ -15,7 +15,7 @@ export default function Homepage() {
         <div className="mx-auto max-w-4xl space-y-8">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-              Zez Academy Full-Stack Development Bootcamp LMS
+              HeyLearn2Code Full-Stack Software Developer Bootcamp LMS
             </h1>
             <p className="mt-4 text-xl text-muted-foreground">
               Put on some Nike's and let's just do it!

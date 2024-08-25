@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Homepage from "./components/homepage";
-import { useAuth } from "./context/AuthContext"; // Adjust the path if needed
+import { useAuth } from "./context/AuthContext"; // Adjust the path if needed //
 
 export default function Page() {
   const { isLoggedIn } = useAuth();
