@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 // SIDE BY SIDE R!
 "use client";
 import { Button } from "@/components/ui/button";
