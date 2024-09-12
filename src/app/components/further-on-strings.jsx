@@ -35,8 +35,7 @@ export default function FurtherOnStrings() {
 let string1 = "I want to go to the beach"
 let string2 = "it is so far away"
 
-// now, from those two strings, print out "I want to go to the beach but 
-it is so far away"
+// now, combine both to show "I want to go to the beach but it is so far away"
 // Go on to google to find out how to do that!
               `}</code>
               </pre>
@@ -49,8 +48,7 @@ it is so far away"
 let string1 = "I want to go to the beach"
 let string2 = "it is so far away"
 
-// now, from those two strings, print out "I want to go to the beach but 
-it is so far away"
+// now, from those two strings, print out "I want to go to the beach but it is so far away"
 // Go on to google to find out how to do that!
                     `);
                   }}
@@ -334,11 +332,13 @@ console.log(medalsUpperCase)
               <pre className="text-sm text-[#d4d4d4]">
                 <code>{`
 let string1 = "I want to go home";
-let stringSplit1 = string1.split(" "); // here we are splitting the string every time there is an empty space
+// here we are splitting the string every time there is an empty space
+let stringSplit1 = string1.split(" "); 
 console.log(stringSplit1);
 
 let string2 = "Shaun, Sasha, Shane";
-let stringSplit2 = string2.split(","); // we split it at every comma
+// we split it at every comma
+let stringSplit2 = string2.split(","); 
 console.log(stringSplit2);
               `}</code>
               </pre>
@@ -349,11 +349,13 @@ console.log(stringSplit2);
                   onClick={() => {
                     navigator.clipboard.writeText(`
 let string1 = "I want to go home";
-let stringSplit1 = string1.split(" "); // here we are splitting the string every time there is an empty space
+// here we are splitting the string every time there is an empty space
+let stringSplit1 = string1.split(" "); 
 console.log(stringSplit1);
 
 let string2 = "Shaun, Sasha, Shane";
-let stringSplit2 = string2.split(","); // we split it at every comma
+// we split it at every comma
+let stringSplit2 = string2.split(","); 
 console.log(stringSplit2);
                     `);
                   }}

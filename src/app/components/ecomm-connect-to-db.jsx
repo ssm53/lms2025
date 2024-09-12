@@ -135,14 +135,64 @@ DATABASE_URL="postgresql://\${POSTGRES_USER}:\${POSTGRES_PASSWORD}@localhost:\${
             <br />
             <div className="mt-4 rounded-md bg-[#1e1e1e] p-4">
               <pre className="text-sm text-[#d4d4d4]">
-                <code>{`docker-compose up -d`}</code>
+                <code>{`version: "3.8"
+services:
+  db:
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+      - POSTGRES_DB
+    ports:
+      - "\${POSTGRES_PORT}:5432"
+    volumes:
+      - ./db:/var/lib/postgresql/data
+
+  testdb:
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+      - POSTGRES_DB
+    ports:
+      - "5423:5432"
+    volumes:
+      - ./db.test:/var/lib/postgresql/data
+`}</code>
               </pre>
               <div className="mt-2 flex justify-end">
                 <Button
                   variant="secondary"
                   size="sm"
                   onClick={() => {
-                    navigator.clipboard.writeText(`docker-compose up -d`);
+                    navigator.clipboard.writeText(`version: "3.8"
+services:
+  db:
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+      - POSTGRES_DB
+    ports:
+      - "\${POSTGRES_PORT}:5432"
+    volumes:
+      - ./db:/var/lib/postgresql/data
+
+  testdb:
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+      - POSTGRES_DB
+    ports:
+      - "5423:5432"
+    volumes:
+      - ./db.test:/var/lib/postgresql/data
+`);
                   }}
                 >
                   Copy

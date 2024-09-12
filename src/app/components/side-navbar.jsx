@@ -52,7 +52,7 @@ export default function SideNavbar() {
         className="text-lg font-semibold text-primary"
         prefetch={false}
       >
-        Pre-bootcamp
+        Essentials
       </Link>
       <Link
         href="/pre-bootcamp/welcome"

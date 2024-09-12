@@ -31,7 +31,6 @@ export default function ArrowFunctions() {
                 onClick={() => {
                   navigator.clipboard.writeText(`function sum(a, b) {
   return a + b;
-}');
 }`);
                 }}
               >
@@ -52,8 +51,7 @@ export default function ArrowFunctions() {
                 variant="secondary"
                 size="sm"
                 onClick={() => {
-                  navigator.clipboard.writeText(`let sum = (a, b) => a + b;');
-}`);
+                  navigator.clipboard.writeText(`let sum = (a, b) => a + b;`);
                 }}
               >
                 Copy
@@ -76,7 +74,6 @@ export default function ArrowFunctions() {
                 onClick={() => {
                   navigator.clipboard.writeText(`function isNegative(number) {
   return number <= 0;
-}');
 }`);
                 }}
               >
@@ -97,9 +94,9 @@ export default function ArrowFunctions() {
                 variant="secondary"
                 size="sm"
                 onClick={() => {
-                  navigator.clipboard
-                    .writeText(`let isNegative = (number) => number <= 0;');
-}`);
+                  navigator.clipboard.writeText(
+                    `let isNegative = (number) => number <= 0;`
+                  );
                 }}
               >
                 Copy

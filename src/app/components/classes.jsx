@@ -54,8 +54,7 @@ export default function Classes() {
   },
 
   brake: () => console.log("you are hitting the brakes")
-};');
-}`);
+};`);
                 }}
               >
                 Copy
@@ -79,8 +78,7 @@ let bikeBrake = motorbike.brake()`}</code>
                 size="sm"
                 onClick={() => {
                   navigator.clipboard.writeText(`let bikeBrand = motorbike.brand
-let bikeBrake = motorbike.brake()');
-}`);
+let bikeBrake = motorbike.brake()`);
                 }}
               >
                 Copy
@@ -102,9 +100,9 @@ let bikeBrake = motorbike.brake()');
                 variant="secondary"
                 size="sm"
                 onClick={() => {
-                  navigator.clipboard
-                    .writeText(`let bikeBrand = motorbike["brand"];');
-}`);
+                  navigator.clipboard.writeText(
+                    `let bikeBrand = motorbike["brand"];`
+                  );
                 }}
               >
                 Copy
@@ -275,8 +273,7 @@ let motorbike3 = Motorbike("Ducati", 1999, "yellow", "you are riding the bike wh
 // to access the properties and methods
 motorbike1.ride()
 let bikeBrand3 = motorbike3.brand
-console.log()');
-}`);
+console.log()`);
                 }}
               >
                 Copy

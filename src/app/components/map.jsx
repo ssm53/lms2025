@@ -84,8 +84,7 @@ console.log(fruits.has("orange"));  // Output: true
 
 // Deleting a key-value pair
 fruits.delete("banana");
-console.log(fruits.size);  // Output: 2');
-}`);
+console.log(fruits.size);  // Output: 2`);
                   }}
                 >
                   Copy

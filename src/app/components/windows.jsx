@@ -53,8 +53,7 @@ export default function Windows() {
                   variant="secondary"
                   size="sm"
                   onClick={() => {
-                    navigator.clipboard.writeText(`wsl --install');
-}`);
+                    navigator.clipboard.writeText(`wsl --install`);
                   }}
                 >
                   Copy
@@ -106,23 +105,21 @@ export default function Windows() {
             <br />
             <p>
               Scroll to the bottom and paste the following text into the text
-              editor.
+              editor one by one
             </p>
             <br />
             <div className="mt-4 rounded-md bg-[#1e1e1e] p-4">
               <pre className="text-sm text-[#d4d4d4]">
-                <code>{`• $HOME/.asdf/asdf .sh
-• $HOME/.asdf/completions/asdf.bash`}</code>
+                <code>{`$HOME/.asdf/asdf.sh
+$HOME/.asdf/completions/asdf.bash`}</code>
               </pre>
               <div className="mt-2 flex justify-end">
                 <Button
                   variant="secondary"
                   size="sm"
                   onClick={() => {
-                    navigator.clipboard
-                      .writeText(`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/ins
-stall/HEAD/install.sh)"');
-}`);
+                    navigator.clipboard.writeText(`$HOME/.asdf/asdf.sh
+$HOME/.asdf/completions/asdf.bash`);
                   }}
                 >
                   Copy
@@ -166,8 +163,7 @@ asdf global nodejs latest`}</code>
                       .writeText(`sudo apt-get install dirmngr gpg curl gawk
 asdf plugin add nodes https://github.com/asdf-vm/asdf-nodejs.git
 asdf install nodejs latest 
-asdf global nodejs latest');
-}`);
+asdf global nodejs latest`);
                   }}
                 >
                   Copy
@@ -193,8 +189,7 @@ asdf global nodejs latest');
                   variant="secondary"
                   size="sm"
                   onClick={() => {
-                    navigator.clipboard.writeText(`node --version');
-}`);
+                    navigator.clipboard.writeText(`node --version`);
                   }}
                 >
                   Copy

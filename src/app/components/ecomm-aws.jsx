@@ -456,8 +456,7 @@ AWS_BUCKET_NAME="ecomm-platform-1"`}</code>
                   size="sm"
                   onClick={() => {
                     navigator.clipboard.writeText(`AWS_REGION=us-east-1
-AWS_BUCKET_NAME="ecomm-platform-1"');
-}`);
+AWS_BUCKET_NAME="ecomm-platform-1"`);
                   }}
                 >
                   Copy

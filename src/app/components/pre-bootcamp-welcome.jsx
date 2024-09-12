@@ -28,14 +28,8 @@ export default function PreBootcampWelcome() {
             </p>{" "}
             <br />
             <p>
-              In this module, you will build a calculator, fitness calorie
-              tracker, a joke generator, and an image website which will be
-              live! Here is an example - .
-            </p>{" "}
-            <br />
-            <p>
-              This should be your last 'Javascript Beginner Tutorial'. After
-              this, build projects.
+              This, together with the next module should be your last
+              'Javascript Beginner Tutorial'. After this, build projects.
             </p>{" "}
             <br />
             <p>Programming is 90% practice, 10% theory.</p>

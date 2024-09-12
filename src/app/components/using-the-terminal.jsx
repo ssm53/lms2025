@@ -166,12 +166,7 @@ export default function UsingTheTerminal() {
                       with your own file name
                     </td>
                   </tr>
-                  <tr>
-                    <td className="px-4 py-2 border">pwd</td>
-                    <td className="px-4 py-2 border">
-                      Print working directory
-                    </td>
-                  </tr>
+
                   <tr>
                     <td className="px-4 py-2 border">cd ..</td>
                     <td className="px-4 py-2 border">
@@ -179,18 +174,7 @@ export default function UsingTheTerminal() {
                       hierarchy
                     </td>
                   </tr>
-                  <tr>
-                    <td className="px-4 py-2 border">pwd</td>
-                    <td className="px-4 py-2 border">
-                      Print working directory
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-4 py-2 border">cd ~</td>
-                    <td className="px-4 py-2 border">
-                      Print working directory
-                    </td>
-                  </tr>
+
                   <tr>
                     <td className="px-4 py-2 border">pwd</td>
                     <td className="px-4 py-2 border">

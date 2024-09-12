@@ -38,8 +38,7 @@ export default function EventsHomePage() {
                     navigator.clipboard
                       .writeText(`cosnt resp = await fetch("url")
   const res = await resp.json()
-  console.log(res)');
-}`);
+  console.log(res)`);
                   }}
                 >
                   Copy
@@ -113,8 +112,7 @@ export default function EventsHomePage() {
 		{/each}
 	</div>
 </main>
-');
-}`);
+`);
                   }}
                 >
                   Copy
@@ -203,8 +201,12 @@ export async function load({ fetch }) {
               +page.svelte. I know the export seems weird there, but it is just
               convention in svelte to use export let data.
             </p>
-          </div><br/>
-          <p>Type npm run dev in your vs code terminal and check it out on your browser!</p>
+          </div>
+          <br />
+          <p>
+            Type npm run dev in your vs code terminal and check it out on your
+            browser!
+          </p>
         </div>
       </div>
     </div>

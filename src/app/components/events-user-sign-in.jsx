@@ -326,8 +326,7 @@ export async function authenticateUser(email, password) {
 			res: res
 		};
 	}
-}'
-`);
+}`);
                   }}
                 >
                   Copy

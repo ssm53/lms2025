@@ -19,26 +19,20 @@ export default function SideNavbar2() {
       >
         Lesson Plan
       </Link>
-      <Link
-        href="#"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Set Up
-      </Link>
+
       <Link
         href="/further-essentials/mac-os"
         className="text-lg font-semibold text-primary"
         prefetch={false}
       >
-        MacOS
+        MacOS SetUp
       </Link>
       <Link
         href="/further-essentials/windows"
         className="text-lg font-semibold text-primary"
         prefetch={false}
       >
-        Windows
+        Windows SetUp
       </Link>
       <Link
         href="/further-essentials/using-the-terminal"

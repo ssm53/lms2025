@@ -56,7 +56,7 @@ export default function TagAnatomy() {
             <div className="mt-4 rounded-md bg-[#1e1e1e] p-4">
               <pre className="text-sm text-[#d4d4d4]">
                 <code>{`
- <img src-"your-image-link-goes-here" />
+ <img src="your-image-link-goes-here" />
               `}</code>
               </pre>
               <div className="mt-2 flex justify-end">
@@ -65,7 +65,7 @@ export default function TagAnatomy() {
                   size="sm"
                   onClick={() => {
                     navigator.clipboard.writeText(`
- <img src-"your-image-link-goes-here" />
+ <img src="your-image-link-goes-here" />
                     `);
                   }}
                 >

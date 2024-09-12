@@ -99,8 +99,7 @@ asdf local nodejs 18.18.0`}</code>
                   onClick={() => {
                     navigator.clipboard.writeText(`asdf install nodejs 18.18.0
 cd svelte-tutorial
-asdf local nodejs 18.18.0
-}`);
+asdf local nodejs 18.18.0`);
                   }}
                 >
                   Copy

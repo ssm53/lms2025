@@ -58,9 +58,9 @@ export default function EventsEnv() {
                   variant="secondary"
                   size="sm"
                   onClick={() => {
-                    navigator.clipboard
-                      .writeText(`	import { PUBLIC_BACKEND_BASE_URL } from '$env/static/public';'
-`);
+                    navigator.clipboard.writeText(
+                      `	import { PUBLIC_BACKEND_BASE_URL } from '$env/static/public';`
+                    );
                   }}
                 >
                   Copy

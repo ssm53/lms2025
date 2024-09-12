@@ -50,8 +50,7 @@ stall/HEAD/install.sh)"`}</code>
                   onClick={() => {
                     navigator.clipboard
                       .writeText(`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/ins
-stall/HEAD/install.sh)"');
-}`);
+stall/HEAD/install.sh)"`);
                   }}
                 >
                   Copy
@@ -77,8 +76,7 @@ stall/HEAD/install.sh)"');
                   variant="secondary"
                   size="sm"
                   onClick={() => {
-                    navigator.clipboard.writeText(`brew install asdf');
-}`);
+                    navigator.clipboard.writeText(`brew install asdf`);
                   }}
                 >
                   Copy
@@ -97,9 +95,9 @@ stall/HEAD/install.sh)"');
                   variant="secondary"
                   size="sm"
                   onClick={() => {
-                    navigator.clipboard
-                      .writeText(`echo -e "In. $(brew --prefix asdf)/libexec/asdf.sh" ≥> \${ZDOTDIR: -~}/.zshre');
-}`);
+                    navigator.clipboard.writeText(
+                      `echo -e "In. $(brew --prefix asdf)/libexec/asdf.sh" ≥> \${ZDOTDIR: -~}/.zshrc`
+                    );
                   }}
                 >
                   Copy
@@ -110,7 +108,12 @@ stall/HEAD/install.sh)"');
               Note: asdf is a tool to help you install and manage almost all
               popular programming languages and versions.
             </p>{" "}
-            <h2 className="text-xl font-semibold">3. Install latest NodeJS</h2>
+            <h2 className="text-xl font-semibold">
+              3. Install latest NodeJS. Note please type this in terminal
+              one-by-one. e.g. bew install gpg gawk... and then hit enter. After
+              that, asdf plugin add notes
+              https://github.com/asdf-m/asdf-nodejs.git{" "}
+            </h2>
             <div className="mt-4 rounded-md bg-[#1e1e1e] p-4">
               <pre className="text-sm text-[#d4d4d4]">
                 <code>{`
@@ -128,8 +131,7 @@ asdf global nodejs latest
                     navigator.clipboard.writeText(`brew install gpg gawk
 asdf plugin add nodes https://github.com/asdf-m/asdf-nodejs.git
 asdf install nodes latest
-asdf global nodejs latest');
-}`);
+asdf global nodejs latest`);
                   }}
                 >
                   Copy
@@ -155,8 +157,7 @@ node --version
                   variant="secondary"
                   size="sm"
                   onClick={() => {
-                    navigator.clipboard.writeText(`node --version');
-}`);
+                    navigator.clipboard.writeText(`node --version`);
                   }}
                 >
                   Copy

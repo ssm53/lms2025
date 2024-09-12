@@ -17,8 +17,8 @@ export default function LessonPlan() {
           <div>
             <h2 className="text-xl font-semibold">Hello to you all!</h2>
             <p className="mt-2">
-              Nice one peepe! You've got most of the basics covered, and you're
-              in the top 2% which actually knows what coding is all about!
+              Nice one peeps! You've got alot of the basics covered, and you're
+              in the top 2% who actually know what coding is all about!
             </p>{" "}
             <br />
             <p className="mt-2">

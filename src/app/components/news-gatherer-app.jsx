@@ -63,7 +63,8 @@ npm init
             <br />
             <p>
               This is what you should see. It might not be exactly the same but
-              it should roughly be the same:
+              it should roughly be the same (this is what you should see - dont
+              copy this):
             </p>
             <div className="mt-4 rounded-md bg-[#1e1e1e] p-4">
               <pre className="text-sm text-[#d4d4d4]">

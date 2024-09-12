@@ -43,8 +43,7 @@ console.log(combinedArray); // [1, 2, 3, 4, 5, 6]`}</code>
                     navigator.clipboard.writeText(`const arr1 = [1, 2, 3];
 const arr2 = [4, 5, 6];
 const combinedArray = [...arr1, ...arr2];
-console.log(combinedArray); // [1, 2, 3, 4, 5, 6]');
-}`);
+console.log(combinedArray); // [1, 2, 3, 4, 5, 6]`);
                   }}
                 >
                   Copy
@@ -69,8 +68,7 @@ console.log(copiedArray); // [1, 2, 3]
                       .writeText(`const originalArray = [1, 2, 3];
 const copiedArray = [...originalArray];
 console.log(copiedArray); // [1, 2, 3]
-');
-}`);
+`);
                   }}
                 >
                   Copy
@@ -100,9 +98,7 @@ console.log(combinedObject); // { a: 1, b: 2, c: 3, d: 4 }
 const obj2 = { c: 3, d: 4 };
 const combinedObject = { ...obj1, ...obj2 };
 console.log(combinedObject); // { a: 1, b: 2, c: 3, d: 4 }
-
-');
-}`);
+`);
                   }}
                 >
                   Copy
@@ -129,8 +125,7 @@ console.log(copiedObject); // { a: 1, b: 2 }
 const copiedObject = { ...originalObject };
 console.log(copiedObject); // { a: 1, b: 2 }
 
-');
-}`);
+`);
                   }}
                 >
                   Copy
@@ -147,8 +142,6 @@ console.log(copiedObject); // { a: 1, b: 2 }
                 <code>{`const numbers = [1, 2, 3];
 const add = (a, b, c) => a + b + c;
 console.log(add(...numbers)); // 6
-
-
 `}</code>
               </pre>
               <div className="mt-2 flex justify-end">
@@ -161,8 +154,7 @@ const add = (a, b, c) => a + b + c;
 console.log(add(...numbers)); // 6
 
 
-');
-}`);
+`);
                   }}
                 >
                   Copy
@@ -188,8 +180,6 @@ console.log(add(...numbers)); // 6
 }
 console.log(sum(1, 2, 3)); // 6
 console.log(sum(1, 2, 3, 4, 5)); // 15
-
-
 `}</code>
               </pre>
               <div className="mt-2 flex justify-end">
@@ -202,10 +192,7 @@ console.log(sum(1, 2, 3, 4, 5)); // 15
 }
 console.log(sum(1, 2, 3)); // 6
 console.log(sum(1, 2, 3, 4, 5)); // 15
-
-
-');
-}`);
+`);
                   }}
                 >
                   Copy
@@ -245,7 +232,6 @@ const [first, second, ...rest] = numbers;
 console.log(first);  // 1
 console.log(second); // 2
 console.log(rest);   // [3, 4, 5]
-
 `}</code>
               </pre>
               <div className="mt-2 flex justify-end">
@@ -259,9 +245,7 @@ const [first, second, ...rest] = numbers;
 console.log(first);  // 1
 console.log(second); // 2
 console.log(rest);   // [3, 4, 5]
-
-');
-}`);
+`);
                   }}
                 >
                   Copy
@@ -353,8 +337,7 @@ console.log(updatedUser);
 }
 */
 
-');
-}`);
+`);
                   }}
                 >
                   Copy
