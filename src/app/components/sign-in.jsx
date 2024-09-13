@@ -70,7 +70,7 @@ export default function SignIn() {
             </Button>
           </div>
         </form>
-        <div className="space-y-4">
+        {/* <div className="space-y-4">
           {" "}
           <Link
             href="/forgot-password"
@@ -78,7 +78,7 @@ export default function SignIn() {
           >
             Forgot Password?
           </Link>
-        </div>
+        </div> */}
 
         {message && <p className="mt-4 text-center text-red-500">{message}</p>}
       </div>

@@ -17,8 +17,7 @@ export default function IntroToNextJs() {
           <div>
             <h2 className="text-xl font-semibold">
               Hey you! If you are reading this, there is no way you completed
-              the material in a few days/weeks! Dont be a busy body and take it
-              step-by-step hahahah love yall
+              the material in a few days/weeks! Take it step-by-step, finish the material before hand and return here once you have. This will be updated in 3 weeks.
             </h2>
           </div>
         </div>
