@@ -17,14 +17,17 @@ export default function PreBootcampWelcome() {
           <div>
             <h2 className="text-xl font-semibold">Hello to you all!</h2>
             <p className="mt-2">
-              This module is short and sweet and it's aim is to equip you with
-              the right amount of knowledge to start BUILDING WEB APPS! I don't
-              want you to waste time learning unneccesary theory.
+              These next two modules are short and sweet and the aim is to equip
+              you with the right amount of knowledge to start BUILDING WEB APPS!
+              I don't want you to waste time learning unneccesary theory.
             </p>{" "}
             <br />
             <p className="mt-2">
-              In this module, you will cover all the boring basics before you
-              can start building projects.
+              This module is basically the same as if you type "Javascript
+              Beginner Tutorial Playlist" on Youtube, but many of them are
+              really long and makes you learn unneccesary info. I only included
+              mandatory stuff that you need to learn in order to start building
+              web apps! Let's be efficient about it.
             </p>{" "}
             <br />
             <p>
@@ -33,6 +36,7 @@ export default function PreBootcampWelcome() {
             </p>{" "}
             <br />
             <p>Programming is 90% practice, 10% theory.</p>
+            <br />
             Let's go!
             {/* <div className="mt-4 rounded-md bg-[#1e1e1e] p-4">
               <pre className="text-sm text-[#d4d4d4]">

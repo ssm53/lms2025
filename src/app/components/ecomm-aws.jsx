@@ -405,9 +405,18 @@ const upload = multer({ storage: storage });`);
             <br />
             <p>Once you are logged in, search for S3 and click Create Bucket</p>
             <br />
-            <div className="relative w-full h-64">
+            {/* <div className="relative w-full h-64">
               <Image
                 src="/aws1.png"
+                alt="Description of the image"
+                layout="fill"
+                objectFit="contain" // Ensures the whole image fits within the container
+                className="rounded-md"
+              />
+            </div> */}
+            <div className="relative w-full h-64">
+              <Image
+                src="https://res.cloudinary.com/ds2hlirwr/image/upload/v1727026876/images-bootcamp/szhvcht5qswl4o1rfmrs.png"
                 alt="Description of the image"
                 layout="fill"
                 objectFit="contain" // Ensures the whole image fits within the container
@@ -426,9 +435,18 @@ const upload = multer({ storage: storage });`);
               Create Bucket , and after its done you should see your bucket.
             </p>
             <br />
-            <div className="relative w-full h-64">
+            {/* <div className="relative w-full h-64">
               <Image
                 src="/aws2.png"
+                alt="Description of the image"
+                layout="fill"
+                objectFit="contain" // Ensures the whole image fits within the container
+                className="rounded-md"
+              />
+            </div> */}
+            <div className="relative w-full h-64">
+              <Image
+                src="https://res.cloudinary.com/ds2hlirwr/image/upload/v1727027391/images-bootcamp/enwflrdjcexpou0vapde.png"
                 alt="Description of the image"
                 layout="fill"
                 objectFit="contain" // Ensures the whole image fits within the container
@@ -477,9 +495,18 @@ AWS_BUCKET_NAME="ecomm-platform-1"`);
               a new tab
             </p>
             <br />
-            <div className="relative w-full h-64">
+            {/* <div className="relative w-full h-64">
               <Image
                 src="/aws3.png"
+                alt="Description of the image"
+                layout="fill"
+                objectFit="contain" // Ensures the whole image fits within the container
+                className="rounded-md"
+              />
+            </div> */}
+            <div className="relative w-full h-64">
+              <Image
+                src="https://res.cloudinary.com/ds2hlirwr/image/upload/v1727027476/images-bootcamp/kfnxr85u6s8ewmjqalmw.png"
                 alt="Description of the image"
                 layout="fill"
                 objectFit="contain" // Ensures the whole image fits within the container
@@ -489,9 +516,18 @@ AWS_BUCKET_NAME="ecomm-platform-1"`);
             <br />
             <p>Now, you should see this..</p>
             <br />
-            <div className="relative w-full h-64">
+            {/* <div className="relative w-full h-64">
               <Image
                 src="/aws4.png"
+                alt="Description of the image"
+                layout="fill"
+                objectFit="contain" // Ensures the whole image fits within the container
+                className="rounded-md"
+              />
+            </div> */}
+            <div className="relative w-full h-64">
+              <Image
+                src="https://res.cloudinary.com/ds2hlirwr/image/upload/v1727027558/images-bootcamp/fedckxvjjinonfxyysbs.png"
                 alt="Description of the image"
                 layout="fill"
                 objectFit="contain" // Ensures the whole image fits within the container
@@ -512,9 +548,18 @@ AWS_BUCKET_NAME="ecomm-platform-1"`);
               see this. Now click Create Policy at the top right.
             </p>
             <br />
-            <div className="relative w-full h-64">
+            {/* <div className="relative w-full h-64">
               <Image
                 src="/aws5.png"
+                alt="Description of the image"
+                layout="fill"
+                objectFit="contain" // Ensures the whole image fits within the container
+                className="rounded-md"
+              />
+            </div> */}
+            <div className="relative w-full h-64">
+              <Image
+                src="https://res.cloudinary.com/ds2hlirwr/image/upload/v1727027638/images-bootcamp/if45zpdmuvjzxtd3fplo.png"
                 alt="Description of the image"
                 layout="fill"
                 objectFit="contain" // Ensures the whole image fits within the container
@@ -527,9 +572,18 @@ AWS_BUCKET_NAME="ecomm-platform-1"`);
               so for Select a Service, choose S3.
             </p>
             <br />
-            <div className="relative w-full h-64">
+            {/* <div className="relative w-full h-64">
               <Image
                 src="/aws6.png"
+                alt="Description of the image"
+                layout="fill"
+                objectFit="contain" // Ensures the whole image fits within the container
+                className="rounded-md"
+              />
+            </div> */}
+            <div className="relative w-full h-64">
+              <Image
+                src="https://res.cloudinary.com/ds2hlirwr/image/upload/v1727027709/images-bootcamp/fcxedcmc4mfdmhdkjxmc.png"
                 alt="Description of the image"
                 layout="fill"
                 objectFit="contain" // Ensures the whole image fits within the container
@@ -543,7 +597,7 @@ AWS_BUCKET_NAME="ecomm-platform-1"`);
               Object in aws is basically our image..{" "}
             </p>
             <br />
-            <div className="relative w-full h-64">
+            {/* <div className="relative w-full h-64">
               <Image
                 src="/aws7.png"
                 alt="Description of the image"
@@ -551,11 +605,29 @@ AWS_BUCKET_NAME="ecomm-platform-1"`);
                 objectFit="contain" // Ensures the whole image fits within the container
                 className="rounded-md"
               />
-            </div>
-            <br />
+            </div> */}
             <div className="relative w-full h-64">
               <Image
+                src="https://res.cloudinary.com/ds2hlirwr/image/upload/v1727027800/images-bootcamp/wugsbl5kh4mm1915qsq2.png"
+                alt="Description of the image"
+                layout="fill"
+                objectFit="contain" // Ensures the whole image fits within the container
+                className="rounded-md"
+              />
+            </div>
+            <br />
+            {/* <div className="relative w-full h-64">
+              <Image
                 src="/aws8.png"
+                alt="Description of the image"
+                layout="fill"
+                objectFit="contain" // Ensures the whole image fits within the container
+                className="rounded-md"
+              />
+            </div> */}
+            <div className="relative w-full h-64">
+              <Image
+                src="https://res.cloudinary.com/ds2hlirwr/image/upload/v1727027861/images-bootcamp/nosqrjnh3uyoigo2domo.png"
                 alt="Description of the image"
                 layout="fill"
                 objectFit="contain" // Ensures the whole image fits within the container
@@ -570,7 +642,7 @@ AWS_BUCKET_NAME="ecomm-platform-1"`);
               delete an object.
             </p>
             <br />
-            <div className="relative w-full h-64">
+            {/* <div className="relative w-full h-64">
               <Image
                 src="/aws9.png"
                 alt="Description of the image"
@@ -578,11 +650,29 @@ AWS_BUCKET_NAME="ecomm-platform-1"`);
                 objectFit="contain" // Ensures the whole image fits within the container
                 className="rounded-md"
               />
-            </div>
-            <br />
+            </div> */}
             <div className="relative w-full h-64">
               <Image
+                src="https://res.cloudinary.com/ds2hlirwr/image/upload/v1727027926/images-bootcamp/atlzo3xwgmvxgbfxnwwm.png"
+                alt="Description of the image"
+                layout="fill"
+                objectFit="contain" // Ensures the whole image fits within the container
+                className="rounded-md"
+              />
+            </div>
+            <br />
+            {/* <div className="relative w-full h-64">
+              <Image
                 src="/aws10.png"
+                alt="Description of the image"
+                layout="fill"
+                objectFit="contain" // Ensures the whole image fits within the container
+                className="rounded-md"
+              />
+            </div> */}
+            <div className="relative w-full h-64">
+              <Image
+                src="https://res.cloudinary.com/ds2hlirwr/image/upload/v1727027984/images-bootcamp/xene7opjccejsykeqzi3.png"
                 alt="Description of the image"
                 layout="fill"
                 objectFit="contain" // Ensures the whole image fits within the container
@@ -595,9 +685,18 @@ AWS_BUCKET_NAME="ecomm-platform-1"`);
               so in resources, click add arn.
             </p>
             <br />
-            <div className="relative w-full h-64">
+            {/* <div className="relative w-full h-64">
               <Image
                 src="/aws11.png"
+                alt="Description of the image"
+                layout="fill"
+                objectFit="contain" // Ensures the whole image fits within the container
+                className="rounded-md"
+              />
+            </div> */}
+            <div className="relative w-full h-64">
+              <Image
+                src="https://res.cloudinary.com/ds2hlirwr/image/upload/v1727028047/images-bootcamp/ugqnv50bu5p86xicgchh.png"
                 alt="Description of the image"
                 layout="fill"
                 objectFit="contain" // Ensures the whole image fits within the container
@@ -619,9 +718,18 @@ AWS_BUCKET_NAME="ecomm-platform-1"`);
               policy.{" "}
             </p>
             <br />
-            <div className="relative w-full h-64">
+            {/* <div className="relative w-full h-64">
               <Image
                 src="/aws12.png"
+                alt="Description of the image"
+                layout="fill"
+                objectFit="contain" // Ensures the whole image fits within the container
+                className="rounded-md"
+              />
+            </div> */}
+            <div className="relative w-full h-64">
+              <Image
+                src="https://res.cloudinary.com/ds2hlirwr/image/upload/v1727028119/images-bootcamp/cx8te0mr81vqngpepjlj.png"
                 alt="Description of the image"
                 layout="fill"
                 objectFit="contain" // Ensures the whole image fits within the container
@@ -639,9 +747,18 @@ AWS_BUCKET_NAME="ecomm-platform-1"`);
               User.
             </p>
             <br />
-            <div className="relative w-full h-64">
+            {/* <div className="relative w-full h-64">
               <Image
                 src="/aws13.png"
+                alt="Description of the image"
+                layout="fill"
+                objectFit="contain" // Ensures the whole image fits within the container
+                className="rounded-md"
+              />
+            </div> */}
+            <div className="relative w-full h-64">
+              <Image
+                src="https://res.cloudinary.com/ds2hlirwr/image/upload/v1727028188/images-bootcamp/oo2xpd4mxhwscc0c48tj.png"
                 alt="Description of the image"
                 layout="fill"
                 objectFit="contain" // Ensures the whole image fits within the container
@@ -657,9 +774,18 @@ AWS_BUCKET_NAME="ecomm-platform-1"`);
             <br />
             <p>Now give it a name and click Next.</p>
             <br />
-            <div className="relative w-full h-64">
+            {/* <div className="relative w-full h-64">
               <Image
                 src="/aws14.png"
+                alt="Description of the image"
+                layout="fill"
+                objectFit="contain" // Ensures the whole image fits within the container
+                className="rounded-md"
+              />
+            </div> */}
+            <div className="relative w-full h-64">
+              <Image
+                src="https://res.cloudinary.com/ds2hlirwr/image/upload/v1727028257/images-bootcamp/lpxyyxjq1abwwj8me2o3.png"
                 alt="Description of the image"
                 layout="fill"
                 objectFit="contain" // Ensures the whole image fits within the container
@@ -672,9 +798,18 @@ AWS_BUCKET_NAME="ecomm-platform-1"`);
               so click ‘attach policies directly’.
             </p>
             <br />
-            <div className="relative w-full h-64">
+            {/* <div className="relative w-full h-64">
               <Image
                 src="/aws15.png"
+                alt="Description of the image"
+                layout="fill"
+                objectFit="contain" // Ensures the whole image fits within the container
+                className="rounded-md"
+              />
+            </div> */}
+            <div className="relative w-full h-64">
+              <Image
+                src="https://res.cloudinary.com/ds2hlirwr/image/upload/v1727028331/images-bootcamp/soxpgscpdwtrejqytcc4.png"
                 alt="Description of the image"
                 layout="fill"
                 objectFit="contain" // Ensures the whole image fits within the container
@@ -693,9 +828,18 @@ AWS_BUCKET_NAME="ecomm-platform-1"`);
               Select it and open it in a new tab. You should see this
             </p>
             <br />
-            <div className="relative w-full h-64">
+            {/* <div className="relative w-full h-64">
               <Image
                 src="/aws16.png"
+                alt="Description of the image"
+                layout="fill"
+                objectFit="contain" // Ensures the whole image fits within the container
+                className="rounded-md"
+              />
+            </div> */}
+            <div className="relative w-full h-64">
+              <Image
+                src="https://res.cloudinary.com/ds2hlirwr/image/upload/v1727028418/images-bootcamp/ciahrkobcvkv02kmic5t.png"
                 alt="Description of the image"
                 layout="fill"
                 objectFit="contain" // Ensures the whole image fits within the container
@@ -708,9 +852,18 @@ AWS_BUCKET_NAME="ecomm-platform-1"`);
               third party service
             </p>
             <br />
-            <div className="relative w-full h-64">
+            {/* <div className="relative w-full h-64">
               <Image
                 src="/aws17.png"
+                alt="Description of the image"
+                layout="fill"
+                objectFit="contain" // Ensures the whole image fits within the container
+                className="rounded-md"
+              />
+            </div> */}
+            <div className="relative w-full h-64">
+              <Image
+                src="https://res.cloudinary.com/ds2hlirwr/image/upload/v1727028470/images-bootcamp/cs7gkg9njfw2tk3fk7vz.png"
                 alt="Description of the image"
                 layout="fill"
                 objectFit="contain" // Ensures the whole image fits within the container
@@ -720,9 +873,18 @@ AWS_BUCKET_NAME="ecomm-platform-1"`);
             <br />
             <p>You will get this warning.. Click I understand, and type next</p>
             <br />
-            <div className="relative w-full h-64">
+            {/* <div className="relative w-full h-64">
               <Image
                 src="/aws18.png"
+                alt="Description of the image"
+                layout="fill"
+                objectFit="contain" // Ensures the whole image fits within the container
+                className="rounded-md"
+              />
+            </div> */}
+            <div className="relative w-full h-64">
+              <Image
+                src="https://res.cloudinary.com/ds2hlirwr/image/upload/v1727028831/images-bootcamp/lhplcjgkiw9a5lqrmydc.png"
                 alt="Description of the image"
                 layout="fill"
                 objectFit="contain" // Ensures the whole image fits within the container
@@ -741,9 +903,18 @@ AWS_BUCKET_NAME="ecomm-platform-1"`);
               copied into there.. You cant do this twice.
             </p>
             <br />
-            <div className="relative w-full h-64">
+            {/* <div className="relative w-full h-64">
               <Image
                 src="/aws19.png"
+                alt="Description of the image"
+                layout="fill"
+                objectFit="contain" // Ensures the whole image fits within the container
+                className="rounded-md"
+              />
+            </div> */}
+            <div className="relative w-full h-64">
+              <Image
+                src="https://res.cloudinary.com/ds2hlirwr/image/upload/v1727028884/images-bootcamp/ykgmes5dk3s9fcioxjqe.png"
                 alt="Description of the image"
                 layout="fill"
                 objectFit="contain" // Ensures the whole image fits within the container
