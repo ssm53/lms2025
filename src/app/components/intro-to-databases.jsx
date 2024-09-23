@@ -9,7 +9,7 @@ export default function IntroToDatabases() {
   return (
     <div className="flex-1 w-full max-w-3xl mx-auto px-4 py-12 md:px-6 md:py-16">
       <div className="space-y-6">
-        <div className="text-center">
+        <div className="text-left">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl">
             Nice, you've made it this far. Now, let's look at databases.
           </h1>

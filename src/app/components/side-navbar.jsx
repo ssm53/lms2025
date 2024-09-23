@@ -1,206 +1,77 @@
-// /**
-//  * v0 by Vercel.
-//  * @see https://v0.dev/t/i1R2WU5cCBD
-//  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
-//  */
-// import Link from "next/link";
-
-// export default function SideNavbar() {
-//   return (
-//     <nav className="flex flex-col items-start gap-6 bg-background px-4 py-6 sm:w-56">
-//       <Link
-//         href="#"
-//         className="text-lg font-semibold text-primary"
-//         prefetch={false}
-//       >
-//         Pre-bootcamp
-//       </Link>
-//       <Link
-//         href="#"
-//         className="text-base font-medium text-muted-foreground hover:text-foreground"
-//         prefetch={false}
-//       >
-//         Schedule
-//       </Link>
-//       <Link
-//         href="#"
-//         className="text-base font-medium text-muted-foreground hover:text-foreground"
-//         prefetch={false}
-//       >
-//         Welcome
-//       </Link>
-//       <Link
-//         href="/pre-bootcamp/general-tips"
-//         className="text-base font-medium text-muted-foreground hover:text-foreground"
-//         prefetch={false}
-//       >
-//         General Tips
-//       </Link>
-//     </nav>
-//   );
-// }
-
-// TRYING TO PUT IT SIDE BY SIDE R1
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const links = [
+  { href: "/pre-bootcamp/welcome", label: "Welcome" },
+  { href: "/pre-bootcamp/general-tips", label: "General Tips" },
+  { href: "/pre-bootcamp/intro-to-coding", label: "Intro To Coding" },
+  { href: "/pre-bootcamp/variables", label: "Variables" },
+  { href: "/pre-bootcamp/datatypes", label: "3 Data Types" },
+  {
+    href: "/pre-bootcamp/change-datatypes-and-const",
+    label: "Changing Data Types & const vs let",
+  },
+  {
+    href: "/pre-bootcamp/arithmetic-expressions",
+    label: "Arithmetic Expressions",
+  },
+  {
+    href: "/pre-bootcamp/naming-variables-and-user-input",
+    label: "Naming Variables and User Input",
+  },
+  { href: "/pre-bootcamp/exercise-1", label: "Exercise 1" },
+  { href: "/pre-bootcamp/intro-to-functions", label: "Intro to Functions" },
+  {
+    href: "/pre-bootcamp/functions-with-variables",
+    label: "Functions with Variables",
+  },
+  { href: "/pre-bootcamp/html-and-css-basics", label: "HTML and CSS Basics" },
+  { href: "/pre-bootcamp/your-first-app", label: "Your First App!" },
+  { href: "/pre-bootcamp/if-statements", label: "If statements" },
+  {
+    href: "/pre-bootcamp/strict-equality-operator",
+    label: "Strict Equality Operator",
+  },
+  { href: "/pre-bootcamp/and-or-operators", label: "And & OR operator" },
+  { href: "/pre-bootcamp/not-operator", label: "Not Operator" },
+  { href: "/pre-bootcamp/while-loop", label: "While Loop" },
+  { href: "/pre-bootcamp/for-loop", label: "For Loop" },
+  {
+    href: "/pre-bootcamp/loop-through-an-array",
+    label: "Loop Through An Array",
+  },
+  { href: "/pre-bootcamp/objects", label: "Objects" },
+];
 
 export default function SideNavbar() {
+  const pathname = usePathname();
+
   return (
-    <nav className="flex flex-col items-start gap-6 bg-background px-4 py-6 sm:w-56 h-screen">
+    <nav className="flex flex-col items-start gap-2 bg-background py-6 sm:w-[16rem] h-screen border-r border-gray-200 pt-0">
       <Link
         href="#"
-        className="text-lg font-semibold text-primary"
+        className="text-lg font-semibold text-primary w-full bg-[#eeeeee] py-2 px-6"
         prefetch={false}
       >
         Essentials
       </Link>
-      <Link
-        href="/pre-bootcamp/welcome"
-        className="text-base font-medium text-muted-foreground hover:text-foreground"
-        prefetch={false}
-      >
-        Welcome
-      </Link>
-      <Link
-        href="/pre-bootcamp/general-tips"
-        className="text-base font-medium text-muted-foreground hover:text-foreground"
-        prefetch={false}
-      >
-        General Tips
-      </Link>
-      <Link
-        href="/pre-bootcamp/intro-to-coding"
-        className="text-base font-medium text-muted-foreground hover:text-foreground"
-        prefetch={false}
-      >
-        Intro To Coding
-      </Link>
-      <Link
-        href="/pre-bootcamp/variables"
-        className="text-base font-medium text-muted-foreground hover:text-foreground"
-        prefetch={false}
-      >
-        Variables
-      </Link>
-      <Link
-        href="/pre-bootcamp/datatypes"
-        className="text-base font-medium text-muted-foreground hover:text-foreground"
-        prefetch={false}
-      >
-        3 Data Types
-      </Link>
-      <Link
-        href="/pre-bootcamp/change-datatypes-and-const"
-        className="text-base font-medium text-muted-foreground hover:text-foreground"
-        prefetch={false}
-      >
-        Changing Data Types & const vs let
-      </Link>
-      <Link
-        href="/pre-bootcamp/arithmetic-expressions"
-        className="text-base font-medium text-muted-foreground hover:text-foreground"
-        prefetch={false}
-      >
-        Arithmetic Expressions
-      </Link>
-      <Link
-        href="/pre-bootcamp/naming-variables-and-user-input"
-        className="text-base font-medium text-muted-foreground hover:text-foreground"
-        prefetch={false}
-      >
-        Naming Variables and User Input
-      </Link>
-      <Link
-        href="/pre-bootcamp/exercise-1"
-        className="text-base font-medium text-muted-foreground hover:text-foreground"
-        prefetch={false}
-      >
-        Exercise 1
-      </Link>
-      <Link
-        href="/pre-bootcamp/intro-to-functions"
-        className="text-base font-medium text-muted-foreground hover:text-foreground"
-        prefetch={false}
-      >
-        Intro to Functions
-      </Link>
-      <Link
-        href="/pre-bootcamp/functions-with-variables"
-        className="text-base font-medium text-muted-foreground hover:text-foreground"
-        prefetch={false}
-      >
-        Functions with Variables
-      </Link>
-      <Link
-        href="/pre-bootcamp/html-and-css-basics"
-        className="text-base font-medium text-muted-foreground hover:text-foreground"
-        prefetch={false}
-      >
-        HTML and CSS Basics
-      </Link>
-      <Link
-        href="/pre-bootcamp/your-first-app"
-        className="text-base font-medium text-muted-foreground hover:text-foreground"
-        prefetch={false}
-      >
-        Your First App!
-      </Link>
-      <Link
-        href="/pre-bootcamp/if-statements"
-        className="text-base font-medium text-muted-foreground hover:text-foreground"
-        prefetch={false}
-      >
-        If statements
-      </Link>
-      <Link
-        href="/pre-bootcamp/strict-equality-operator"
-        className="text-base font-medium text-muted-foreground hover:text-foreground"
-        prefetch={false}
-      >
-        Strict Equality Operator
-      </Link>
-      <Link
-        href="/pre-bootcamp/and-or-operators"
-        className="text-base font-medium text-muted-foreground hover:text-foreground"
-        prefetch={false}
-      >
-        And & OR operator
-      </Link>
-      <Link
-        href="/pre-bootcamp/not-operator"
-        className="text-base font-medium text-muted-foreground hover:text-foreground"
-        prefetch={false}
-      >
-        Not Operator
-      </Link>
-      <Link
-        href="/pre-bootcamp/while-loop"
-        className="text-base font-medium text-muted-foreground hover:text-foreground"
-        prefetch={false}
-      >
-        While Loop
-      </Link>
-      <Link
-        href="/pre-bootcamp/for-loop"
-        className="text-base font-medium text-muted-foreground hover:text-foreground"
-        prefetch={false}
-      >
-        For Loop
-      </Link>
-      <Link
-        href="/pre-bootcamp/loop-through-an-array"
-        className="text-base font-medium text-muted-foreground hover:text-foreground"
-        prefetch={false}
-      >
-        Loop Through An Array
-      </Link>
-      <Link
-        href="/pre-bootcamp/objects"
-        className="text-base font-medium text-muted-foreground hover:text-foreground"
-        prefetch={false}
-      >
-        Objects
-      </Link>
+      <div className="flex flex-col items-start bg-background py-6 sm:w-full h-screen border-gray-200 px-6 pt-0 overflow-auto">
+        {links.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className={`w-full text-[15px] leading-[19px]   ${
+              pathname === link.href
+                ? "text-black font-medium"
+                : "text-muted-foreground font-normal"
+            } hover:text-foreground py-2`}
+            prefetch={false}
+          >
+            {link.label}
+          </Link>
+        ))}
+      </div>
     </nav>
   );
 }
