@@ -19,7 +19,7 @@ export default function Page() {
   return (
     <div className="flex flex-col">
       <Navbar />
-      <div className="flex mt-[64px]">
+      <div className="flex mt-[64px] h-[100vh]">
         <SideNavbar />
         <PreBootcampWelcome />
       </div>
