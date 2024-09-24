@@ -70,6 +70,7 @@
 body {
   background-color: #f8f8f8;
 }
-h1 {
-  /* line-height: 44px !important; */
+
+pre {
+  overflow: auto;
 }

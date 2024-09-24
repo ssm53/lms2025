@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <div className="flex flex-col">
       <Navbar />
-      <div className="flex">
+      <div className="flex mt-[64px]">
         <SignIn />
       </div>
     </div>

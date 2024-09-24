@@ -1,207 +1,90 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const links = [
+  { href: "/further-essentials/lesson-plan", label: "Lesson Plan" },
+  { href: "/further-essentials/mac-os", label: "MacOS SetUp" },
+  { href: "/further-essentials/windows", label: "Windows SetUp" },
+  {
+    href: "/further-essentials/using-the-terminal",
+    label: "Using the Terminal",
+  },
+  {
+    href: "/further-essentials/set-up-a-project-like-a-pro",
+    label: "Set Up a Project like a Pro",
+  },
+  { href: "/further-essentials/keep-organised", label: "Let's Keep Organised" },
+  {
+    href: "/further-essentials/using-vscode-terminal",
+    label: "Using VS Code's Terminal",
+  },
+  {
+    href: "/further-essentials/further-on-strings",
+    label: "Further on Strings",
+  },
+  {
+    href: "/further-essentials/easier-way-to-loop-through-array",
+    label: "Easier Way to Loop through Array",
+  },
+  {
+    href: "/further-essentials/further-on-type-conversion",
+    label: "Further On Type Conversion",
+  },
+  { href: "/further-essentials/arrow-functions", label: "Arrow Functions" },
+  { href: "/further-essentials/classes", label: "Classes" },
+  { href: "/further-essentials/variable-scope", label: "Variable Scope" },
+  {
+    href: "/further-essentials/floating-point-error",
+    label: "Floating Point Error",
+  },
+  { href: "/further-essentials/using-libraries", label: "Using Libraries" },
+  { href: "/further-essentials/math", label: "Math" },
+  { href: "/further-essentials/spread-and-rest", label: "Spread & Rest" },
+  { href: "/further-essentials/map", label: "Map" },
+  { href: "/further-essentials/errors", label: "Errors" },
+  { href: "/further-essentials/best-practices", label: "Best Practices" },
+  { href: "/further-essentials/dates", label: "Dates" },
+  {
+    href: "/further-essentials/concurrency-and-parallelism",
+    label: "Concurrency & Parallelism",
+  },
+  { href: "/further-essentials/promise", label: "Promise" },
+  { href: "/further-essentials/async-await", label: "Async-Await" },
+  { href: "/further-essentials/intro-to-api", label: "Intro to API's" },
+  { href: "/further-essentials/news-gatherer-app", label: "News Gatherer App" },
+  { href: "/further-essentials/news-api", label: "News API" },
+];
 
 export default function SideNavbar2() {
+  const pathname = usePathname();
+
   return (
-    <nav className="flex flex-col items-start gap-6 bg-background px-4 py-6 sm:w-56 h-screen">
+    <nav className="flex flex-col items-start gap-2 bg-background py-6 sm:w-[16rem] h-screen border-r border-gray-200 pt-0">
       <Link
         href="#"
-        className="text-lg font-semibold text-primary"
+        className="text-lg font-semibold text-primary w-full bg-[#eeeeee] py-2 px-6"
         prefetch={false}
       >
         Further Essentials
       </Link>
-      <Link
-        href="/further-essentials/lesson-plan"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Lesson Plan
-      </Link>
-
-      <Link
-        href="/further-essentials/mac-os"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        MacOS SetUp
-      </Link>
-      <Link
-        href="/further-essentials/windows"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Windows SetUp
-      </Link>
-      <Link
-        href="/further-essentials/using-the-terminal"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Using the Terminal
-      </Link>
-      <Link
-        href="/further-essentials/set-up-a-project-like-a-pro"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Set Up a Project like a Pro
-      </Link>
-      <Link
-        href="/further-essentials/keep-organised"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Let's Keep Organised
-      </Link>
-      <Link
-        href="/further-essentials/using-vscode-terminal"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Using VS Code's Terminal
-      </Link>
-      <Link
-        href="/further-essentials/further-on-strings"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Further on Strings
-      </Link>
-      <Link
-        href="/further-essentials/easier-way-to-loop-through-array"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Easier Way to Loop through Array
-      </Link>
-      <Link
-        href="/further-essentials/further-on-type-conversion"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Further On Type Conversion
-      </Link>
-      <Link
-        href="/further-essentials/arrow-functions"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Arrow Functions
-      </Link>
-      <Link
-        href="/further-essentials/classes"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Classes
-      </Link>
-      <Link
-        href="/further-essentials/variable-scope"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Variable Scope
-      </Link>
-      <Link
-        href="/further-essentials/floating-point-error"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Floating Point Error
-      </Link>
-      <Link
-        href="/further-essentials/using-libraries"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Using Libraries
-      </Link>
-      <Link
-        href="/further-essentials/math"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Math
-      </Link>
-      <Link
-        href="/further-essentials/spread-and-rest"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Spread & Rest
-      </Link>
-      <Link
-        href="/further-essentials/map"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Map
-      </Link>
-      <Link
-        href="/further-essentials/errors"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Errors
-      </Link>
-      <Link
-        href="/further-essentials/best-practices"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Best Practices
-      </Link>
-      <Link
-        href="/further-essentials/dates"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Dates
-      </Link>
-      <Link
-        href="/further-essentials/concurrency-and-parallelism"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Concurency & Parallelism
-      </Link>
-      <Link
-        href="/further-essentials/promise"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Promise
-      </Link>
-      <Link
-        href="/further-essentials/async-await"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Async-Await
-      </Link>
-      <Link
-        href="/further-essentials/intro-to-api"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Intro to API's
-      </Link>
-      <Link
-        href="/further-essentials/news-gatherer-app"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        News Gatherer App
-      </Link>
-      <Link
-        href="/further-essentials/news-api"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        News API
-      </Link>
+      <div className="flex flex-col items-start bg-background py-6 sm:w-full h-screen border-gray-200 px-6 pt-0 overflow-auto">
+        {links.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className={`w-full text-[15px] leading-[19px]   ${
+              pathname === link.href
+                ? "text-black font-medium"
+                : "text-muted-foreground font-normal"
+            } hover:text-foreground py-2`}
+            prefetch={false}
+          >
+            {link.label}
+          </Link>
+        ))}
+      </div>
     </nav>
   );
 }

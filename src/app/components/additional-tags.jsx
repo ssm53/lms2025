@@ -21,7 +21,7 @@ export default function AdditionalTags() {
             </p>
             <h2 className="text-xl font-semibold">Lists</h2>
             <div className="mt-4 rounded-md bg-[#1e1e1e] p-4">
-              <pre className="text-sm text-[#d4d4d4]">
+              <pre className="text-sm text-[#d4d4d4] overflow-auto">
                 <code>{`
  <ol>
       My fav footballers
@@ -92,7 +92,7 @@ export default function AdditionalTags() {
             </p>
             <br />
             <div className="mt-4 rounded-md bg-[#1e1e1e] p-4">
-              <pre className="text-sm text-[#d4d4d4]">
+              <pre className="text-sm text-[#d4d4d4] overflow-auto">
                 <code>{`
  <video src="same-as-image" alt="same-as-image"></video>
               `}</code>
@@ -121,7 +121,7 @@ export default function AdditionalTags() {
             </p>
             <br />
             <div className="mt-4 rounded-md bg-[#1e1e1e] p-4">
-              <pre className="text-sm text-[#d4d4d4]">
+              <pre className="text-sm text-[#d4d4d4] overflow-auto">
                 <code>{`
   <form>
       <label>Username</label>

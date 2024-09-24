@@ -36,7 +36,7 @@ export default function DataTypes() {
             </p>{" "}
             <br />
             <div className="mt-4 rounded-md bg-[#1e1e1e] p-4">
-              <pre className="text-sm text-[#d4d4d4]">
+              <pre className="text-sm text-[#d4d4d4] overflow-auto">
                 <code>{`// 1. You are still Picasso and you called you art class Be Like Picasso. Declare this as a variable and ensure that it is a string. After that, double-check the typeof that variable and print the type in our console.
 
 

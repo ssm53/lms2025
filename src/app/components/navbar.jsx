@@ -20,7 +20,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="flex items-center justify-between h-16 px-4 bg-background border-b sm:px-6 lg:px-8">
+    <header className="flex items-center justify-between h-16 px-4 bg-background border-b sm:px-6 lg:px-8 fixed w-full">
       <Link href="/" className="text-lg font-bold" prefetch={false}>
         Home
       </Link>

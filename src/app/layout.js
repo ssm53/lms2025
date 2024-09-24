@@ -1,8 +1,10 @@
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
+import { Nunito } from "next/font/google"; // Import Nunito font
 import "./globals.css";
 import { AuthProvider } from "./context/AuthContext"; // Adjust the path if necessary
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
+const nunito = Nunito({ subsets: ["latin"] }); // Initialize Nunito font
 
 export const metadata = {
   title: "HeyLearn2Code-LMS",
@@ -12,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={nunito.className}>
         <AuthProvider>{children}</AuthProvider>
       </body>
     </html>

@@ -5,7 +5,7 @@ export default function Page() {
   return (
     <div className="flex flex-col">
       <Navbar />
-      <div className="flex">
+      <div className="flex mt-[64px]">
         <ApplyNow />
       </div>
     </div>

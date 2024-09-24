@@ -1,248 +1,86 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function SideNavbar3() {
+  const pathname = usePathname();
+
+  const links = [
+    { href: "#", label: "Frontend" },
+    { href: "/frontend/intro", label: "Intro" },
+    { href: "/frontend/head-tag", label: "Head Tag" },
+    { href: "/frontend/tag-anatomy", label: "Tag Anatomy" },
+    { href: "/frontend/heading-and-paragraph", label: "Heading and Paragraph" },
+    { href: "/frontend/anchor-and-image-tag", label: "Anchor and Image" },
+    { href: "/frontend/div", label: "Div Tag" },
+    { href: "/frontend/inline-and-block", label: "Inline and Block Tags" },
+    { href: "/frontend/additional-tags", label: "Addiitonal Tags" },
+    { href: "/frontend/css", label: "CSS" },
+    { href: "/frontend/css-box-model", label: "CSS Box Model" },
+    { href: "/frontend/css-colour", label: "CSS Colour" },
+    { href: "/frontend/css-sizing", label: "CSS Sizing" },
+    {
+      href: "/frontend/style-your-first-website",
+      label: "Style Your First Website",
+    },
+    { href: "/frontend/css-positioning", label: "CSS Positioning" },
+    { href: "/frontend/dom-manipulation", label: "DOM manipulation" },
+    { href: "/frontend/further-dom-methods", label: "Further DOM Methods" },
+    { href: "/frontend/interactivity", label: "Interactivity" },
+    { href: "/frontend/what-is-sveltekit", label: "What is Sveltekit?" },
+    { href: "/frontend/sveltekit-tutorial", label: "Sveltekit Tutorial" },
+    { href: "/frontend/sveltekit-tutorial-2", label: "Sveltekit Tutorial 2" },
+    {
+      href: "/frontend/tailwind-daisyui-demo",
+      label: "Tailwind and DaisyUI Demo",
+    },
+    { href: "/frontend/events-platform", label: "Build an events platform!" },
+    { href: "/frontend/set-up", label: "Set Up" },
+    { href: "/frontend/api-reminder", label: "Reminder of APIs" },
+    { href: "/frontend/events-env", label: "Privacy matters" },
+    { href: "/frontend/events-home-page", label: "Lets do our homepage" },
+    {
+      href: "/frontend/events-user-register",
+      label: "Allow users to register",
+    },
+    { href: "/frontend/events-user-sign-in", label: "Allow users to sign in" },
+    {
+      href: "/frontend/events-post-event",
+      label: "Allow users to post events!",
+    },
+    {
+      href: "/frontend/events-see-specific-event",
+      label: "Allow users to see specific events!",
+    },
+    { href: "/frontend/events-logout", label: "Allow users to logout!" },
+    { href: "/frontend/events-challenges", label: "Challenges" },
+  ];
+
   return (
-    <nav className="flex flex-col items-start gap-6 bg-background px-4 py-6 sm:w-56 h-screen">
+    <nav className="flex flex-col items-start gap-2 bg-background py-6 sm:w-[16rem] h-screen border-r border-gray-200 pt-0">
       <Link
         href="#"
-        className="text-lg font-semibold text-primary"
+        className="text-lg font-semibold text-primary w-full bg-[#eeeeee] py-2 px-6"
         prefetch={false}
       >
         Frontend
       </Link>
-      <Link
-        href="/frontend/intro"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Intro
-      </Link>
-      <Link
-        href="/frontend/head-tag"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Head Tag
-      </Link>
-      <Link
-        href="/frontend/tag-anatomy"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Tag Anatomy
-      </Link>
-      <Link
-        href="/frontend/heading-and-paragraph"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Heading and Paragraph
-      </Link>
-      <Link
-        href="/frontend/anchor-and-image-tag"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Anchor and Image
-      </Link>
-      <Link
-        href="/frontend/div"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Div Tag
-      </Link>
-      <Link
-        href="/frontend/inline-and-block"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Inline and Block Tags
-      </Link>
-      <Link
-        href="/frontend/additional-tags"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Addiitonal Tags
-      </Link>
-      <Link
-        href="/frontend/css"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        CSS
-      </Link>
-      <Link
-        href="/frontend/css-box-model"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        CSS Box Model
-      </Link>
-      <Link
-        href="/frontend/css-colour"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        CSS Colour
-      </Link>
-      <Link
-        href="/frontend/css-sizing"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        CSS Sizing
-      </Link>
-      <Link
-        href="/frontend/style-your-first-website"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Style Your First Website
-      </Link>
-      <Link
-        href="/frontend/css-positioning"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        CSS Positioning
-      </Link>
-      <Link
-        href="/frontend/dom-manipulation"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        DOM manipulation
-      </Link>
-      <Link
-        href="/frontend/further-dom-methods"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Further DOM Methods
-      </Link>
-      <Link
-        href="/frontend/interactivity"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Interactivity
-      </Link>
-      <Link
-        href="/frontend/what-is-sveltekit"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        What is Sveltekit?
-      </Link>
-      <Link
-        href="/frontend/sveltekit-tutorial"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Sveltekit Tutorial
-      </Link>
-      <Link
-        href="/frontend/sveltekit-tutorial-2"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Sveltekit Tutorial 2
-      </Link>
-      <Link
-        href="/frontend/tailwind-daisyui-demo"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Tailwind and DaisyUI Demo
-      </Link>
-      <Link
-        href="/frontend/tailwind-daisyui-demo"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Tailwind and DaisyUI Demo
-      </Link>
-      <Link
-        href="/frontend/events-platform"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Build an events platform!
-      </Link>
-      <Link
-        href="/frontend/set-up"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Set Up
-      </Link>
-      <Link
-        href="/frontend/api-reminder"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Reminder of APIs
-      </Link>
-      <Link
-        href="/frontend/events-env"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Privacy matters
-      </Link>
-      <Link
-        href="/frontend/events-home-page"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Lets do our homepage
-      </Link>
-      <Link
-        href="/frontend/events-user-register"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Allow users to register
-      </Link>
-      <Link
-        href="/frontend/events-user-sign-in"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Allow users to sign in
-      </Link>
-      <Link
-        href="/frontend/events-post-event"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Allow users to post events!
-      </Link>
-      <Link
-        href="/frontend/events-see-specific-event"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Allow users to see specific events!
-      </Link>
-      <Link
-        href="/frontend/events-logout"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Allow users to logout!
-      </Link>
-      <Link
-        href="/frontend/events-challenges"
-        className="text-lg font-semibold text-primary"
-        prefetch={false}
-      >
-        Challenges
-      </Link>
+      <div className="flex flex-col items-start bg-background py-6 sm:w-full h-screen border-gray-200 px-6 pt-0 overflow-auto">
+        {links.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className={`w-full text-[15px] leading-[19px] ${
+              pathname === link.href
+                ? "text-black font-medium"
+                : "text-muted-foreground font-normal"
+            } hover:text-foreground py-2`}
+            prefetch={false}
+          >
+            {link.label}
+          </Link>
+        ))}
+      </div>
     </nav>
   );
 }
