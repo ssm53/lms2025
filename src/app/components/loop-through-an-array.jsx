@@ -8,7 +8,7 @@ export default function LoopThroughAnArray() {
       <div className="space-y-6">
         <div className="text-left">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-            Not operator
+            Loop Through An Array
           </h1>
           {/* <p className="mt-2 text-muted-foreground">Welcome to our syllabus</p> */}
         </div>

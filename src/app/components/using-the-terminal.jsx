@@ -4,8 +4,11 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function UsingTheTerminal() {
+  const [showAnswer, setShowAnswer] = useState(false); // State to toggle the answer visibility
+
   return (
     <div className="flex-1 w-full max-w-3xl mx-auto px-4 py-12 md:px-6 md:py-16">
       <div className="space-y-6">
@@ -305,7 +308,432 @@ export default function UsingTheTerminal() {
               className="underline"
             >
               Click here!
-            </Link>
+            </Link>{" "}
+            <br />
+            <h2 className="text-xl font-semibold">Exercise</h2>
+            <p className="mt-2">
+              Ensure that you copy the below and paste it into your index.js
+            </p>{" "}
+            <br />
+            <div className="mt-4 rounded-md bg-[#1e1e1e] p-4">
+              <pre className="text-sm text-[#d4d4d4]">
+                <code>{`/* 
+Exercise 1: Navigate to a Directory
+Scenario: Practice using the cd command.
+
+Open your terminal.
+Use the cd command to navigate to the Documents folder on your system.
+Once you're inside the Documents folder, print the current directory using the pwd command.
+*/
+
+/* 
+Exercise 2: List Files and Directories
+Scenario: Explore the ls command.
+
+While inside the Documents folder, use the ls command to list all the files and directories.
+Try using the ls -l command to see more details about the files.
+*/
+
+/* 
+Exercise 3: Create a New Directory
+Scenario: Practice the mkdir command.
+
+In your terminal, navigate back to your home directory.
+Create a new directory called TerminalPractice using the mkdir command.
+Verify that the directory was created by using the ls command.
+*/
+
+/* 
+Exercise 4: Create a New File
+Scenario: Practice using the touch command.
+
+Navigate into the TerminalPractice directory you just created.
+Use the touch command to create a new file called notes.txt.
+List the contents of the TerminalPractice directory to confirm the file was created.
+*/
+
+/* 
+Exercise 5: Remove a File
+Scenario: Practice using the rm command.
+
+Inside the TerminalPractice directory, create a new file called temp.txt using the touch command.
+Now, use the rm command to delete the temp.txt file.
+List the contents of the directory to confirm that the file has been deleted.
+*/
+
+/* 
+Exercise 6: Copy a File
+Scenario: Practice using the cp command.
+
+In the TerminalPractice directory, create a file called backup.txt.
+Use the cp command to create a copy of backup.txt and name it backup_copy.txt.
+Verify the files by listing the directory contents.
+*/
+
+/* 
+Exercise 7: Move a File
+Scenario: Practice using the mv command.
+
+Inside the TerminalPractice directory, create a new file called move_me.txt.
+Use the mv command to move move_me.txt to the Documents folder.
+Go to the Documents folder to verify that the file was moved.
+*/
+
+/* 
+Exercise 8: View the Contents of a File
+Scenario: Practice using the cat command.
+
+In the TerminalPractice directory, create a new file called greetings.txt.
+Add the text "Hello, World!" to the file using a text editor or by echoing the text into the file.
+Use the cat command to display the contents of the file in the terminal.
+*/
+`}</code>
+              </pre>
+              <div className="mt-2 flex justify-end">
+                <Button
+                  variant="secondary"
+                  size="sm"
+                  onClick={() => {
+                    navigator.clipboard.writeText(`/* 
+Exercise 1: Navigate to a Directory
+Scenario: Practice using the cd command.
+
+Open your terminal.
+Use the cd command to navigate to the Documents folder on your system.
+Once you're inside the Documents folder, print the current directory using the pwd command.
+*/
+
+/* 
+Exercise 2: List Files and Directories
+Scenario: Explore the ls command.
+
+While inside the Documents folder, use the ls command to list all the files and directories.
+Try using the ls -l command to see more details about the files.
+*/
+
+/* 
+Exercise 3: Create a New Directory
+Scenario: Practice the mkdir command.
+
+In your terminal, navigate back to your home directory.
+Create a new directory called TerminalPractice using the mkdir command.
+Verify that the directory was created by using the ls command.
+*/
+
+/* 
+Exercise 4: Create a New File
+Scenario: Practice using the touch command.
+
+Navigate into the TerminalPractice directory you just created.
+Use the touch command to create a new file called notes.txt.
+List the contents of the TerminalPractice directory to confirm the file was created.
+*/
+
+/* 
+Exercise 5: Remove a File
+Scenario: Practice using the rm command.
+
+Inside the TerminalPractice directory, create a new file called temp.txt using the touch command.
+Now, use the rm command to delete the temp.txt file.
+List the contents of the directory to confirm that the file has been deleted.
+*/
+
+/* 
+Exercise 6: Copy a File
+Scenario: Practice using the cp command.
+
+In the TerminalPractice directory, create a file called backup.txt.
+Use the cp command to create a copy of backup.txt and name it backup_copy.txt.
+Verify the files by listing the directory contents.
+*/
+
+/* 
+Exercise 7: Move a File
+Scenario: Practice using the mv command.
+
+Inside the TerminalPractice directory, create a new file called move_me.txt.
+Use the mv command to move move_me.txt to the Documents folder.
+Go to the Documents folder to verify that the file was moved.
+*/
+
+/* 
+Exercise 8: View the Contents of a File
+Scenario: Practice using the cat command.
+
+In the TerminalPractice directory, create a new file called greetings.txt.
+Add the text "Hello, World!" to the file using a text editor or by echoing the text into the file.
+Use the cat command to display the contents of the file in the terminal.
+*/
+`);
+                  }}
+                >
+                  Copy
+                </Button>
+              </div>
+            </div>
+            <br />
+            <h2 className="text-xl font-semibold">Answer</h2>
+            <Button onClick={() => setShowAnswer(!showAnswer)}>
+              {showAnswer ? "Hide Answer" : "See Answer"}
+            </Button>
+            <br />
+            {/* The answer is hidden by default and shown when 'showAnswer' is true */}
+            {showAnswer && (
+              <div className="mt-4 rounded-md bg-[#1e1e1e] p-4">
+                <pre className="text-sm text-[#d4d4d4]">
+                  <code>{`/* 
+Exercise 1: Navigate to a Directory
+Scenario: Practice using the cd command.
+
+Open your terminal.
+Use the cd command to navigate to the Documents folder on your system.
+Once you're inside the Documents folder, print the current directory using the pwd command.
+*/
+
+// Answer (this should be typed in your terminal line by line)
+cd ~/Documents
+pwd
+
+
+/* 
+Exercise 2: List Files and Directories
+Scenario: Explore the ls command.
+
+While inside the Documents folder, use the ls command to list all the files and directories.
+Try using the ls -l command to see more details about the files.
+*/
+
+// Answer (this should be typed in your terminal line by line)
+ls
+ls -l
+
+
+/* 
+Exercise 3: Create a New Directory
+Scenario: Practice the mkdir command.
+
+In your terminal, navigate back to your home directory.
+Create a new directory called TerminalPractice using the mkdir command.
+Verify that the directory was created by using the ls command.
+*/
+
+
+// Answer (this should be typed in your terminal line by line)
+cd ~
+mkdir TerminalPractice
+ls
+
+
+/* 
+Exercise 4: Create a New File
+Scenario: Practice using the touch command.
+
+Navigate into the TerminalPractice directory you just created.
+Use the touch command to create a new file called notes.txt.
+List the contents of the TerminalPractice directory to confirm the file was created.
+*/
+
+
+// Answer (this should be typed in your terminal line by line)
+cd TerminalPractice
+touch notes.txt
+ls
+
+
+/* 
+Exercise 5: Remove a File
+Scenario: Practice using the rm command.
+
+Inside the TerminalPractice directory, create a new file called temp.txt using the touch command.
+Now, use the rm command to delete the temp.txt file.
+List the contents of the directory to confirm that the file has been deleted.
+*/
+
+// Answer (this should be typed in your terminal line by line)
+touch temp.txt
+rm temp.txt
+ls
+
+
+/* 
+Exercise 6: Copy a File
+Scenario: Practice using the cp command.
+
+In the TerminalPractice directory, create a file called backup.txt.
+Use the cp command to create a copy of backup.txt and name it backup_copy.txt.
+Verify the files by listing the directory contents.
+*/
+
+// Answer (this should be typed in your terminal line by line)
+touch backup.txt
+cp backup.txt backup_copy.txt
+ls
+
+
+/* 
+Exercise 7: Move a File
+Scenario: Practice using the mv command.
+
+Inside the TerminalPractice directory, create a new file called move_me.txt.
+Use the mv command to move move_me.txt to the Documents folder.
+Go to the Documents folder to verify that the file was moved.
+*/
+
+// Answer (this should be typed in your terminal line by line)
+touch move_me.txt
+mv move_me.txt ~/Documents
+cd ~/Documents
+ls
+
+
+/* 
+Exercise 8: View the Contents of a File
+Scenario: Practice using the cat command.
+
+In the TerminalPractice directory, create a new file called greetings.txt.
+Add the text "Hello, World!" to the file using a text editor or by echoing the text into the file.
+Use the cat command to display the contents of the file in the terminal.
+*/
+
+// Answer (this should be typed in your terminal line by line)
+touch greetings.txt
+echo "Hello, World!" > greetings.txt
+cat greetings.txt
+
+`}</code>
+                </pre>
+                <div className="mt-2 flex justify-end">
+                  <Button
+                    variant="secondary"
+                    size="sm"
+                    onClick={() => {
+                      navigator.clipboard.writeText(`/* 
+Exercise 1: Navigate to a Directory
+Scenario: Practice using the cd command.
+
+Open your terminal.
+Use the cd command to navigate to the Documents folder on your system.
+Once you're inside the Documents folder, print the current directory using the pwd command.
+*/
+
+// Answer (this should be typed in your terminal line by line)
+cd ~/Documents
+pwd
+
+
+/* 
+Exercise 2: List Files and Directories
+Scenario: Explore the ls command.
+
+While inside the Documents folder, use the ls command to list all the files and directories.
+Try using the ls -l command to see more details about the files.
+*/
+
+// Answer (this should be typed in your terminal line by line)
+ls
+ls -l
+
+
+/* 
+Exercise 3: Create a New Directory
+Scenario: Practice the mkdir command.
+
+In your terminal, navigate back to your home directory.
+Create a new directory called TerminalPractice using the mkdir command.
+Verify that the directory was created by using the ls command.
+*/
+
+
+// Answer (this should be typed in your terminal line by line)
+cd ~
+mkdir TerminalPractice
+ls
+
+
+/* 
+Exercise 4: Create a New File
+Scenario: Practice using the touch command.
+
+Navigate into the TerminalPractice directory you just created.
+Use the touch command to create a new file called notes.txt.
+List the contents of the TerminalPractice directory to confirm the file was created.
+*/
+
+
+// Answer (this should be typed in your terminal line by line)
+cd TerminalPractice
+touch notes.txt
+ls
+
+
+/* 
+Exercise 5: Remove a File
+Scenario: Practice using the rm command.
+
+Inside the TerminalPractice directory, create a new file called temp.txt using the touch command.
+Now, use the rm command to delete the temp.txt file.
+List the contents of the directory to confirm that the file has been deleted.
+*/
+
+// Answer (this should be typed in your terminal line by line)
+touch temp.txt
+rm temp.txt
+ls
+
+
+/* 
+Exercise 6: Copy a File
+Scenario: Practice using the cp command.
+
+In the TerminalPractice directory, create a file called backup.txt.
+Use the cp command to create a copy of backup.txt and name it backup_copy.txt.
+Verify the files by listing the directory contents.
+*/
+
+// Answer (this should be typed in your terminal line by line)
+touch backup.txt
+cp backup.txt backup_copy.txt
+ls
+
+
+/* 
+Exercise 7: Move a File
+Scenario: Practice using the mv command.
+
+Inside the TerminalPractice directory, create a new file called move_me.txt.
+Use the mv command to move move_me.txt to the Documents folder.
+Go to the Documents folder to verify that the file was moved.
+*/
+
+// Answer (this should be typed in your terminal line by line)
+touch move_me.txt
+mv move_me.txt ~/Documents
+cd ~/Documents
+ls
+
+
+/* 
+Exercise 8: View the Contents of a File
+Scenario: Practice using the cat command.
+
+In the TerminalPractice directory, create a new file called greetings.txt.
+Add the text "Hello, World!" to the file using a text editor or by echoing the text into the file.
+Use the cat command to display the contents of the file in the terminal.
+*/
+
+// Answer (this should be typed in your terminal line by line)
+touch greetings.txt
+echo "Hello, World!" > greetings.txt
+cat greetings.txt
+
+`);
+                    }}
+                  >
+                    Copy
+                  </Button>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>

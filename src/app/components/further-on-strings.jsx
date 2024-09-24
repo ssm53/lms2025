@@ -3,8 +3,11 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function FurtherOnStrings() {
+  const [showAnswer, setShowAnswer] = useState(false); // State to toggle the answer visibility
+
   return (
     <div className="flex-1 w-full max-w-3xl mx-auto px-4 py-12 md:px-6 md:py-16">
       <div className="space-y-6">
@@ -386,6 +389,287 @@ console.log("Hello, world!;
                 </Button>
               </div>
             </div>
+            <br />
+            <h2 className="text-xl font-semibold">Exercise</h2>
+            <p className="mt-2">
+              Ensure that you copy the below and paste it into your index.js
+            </p>{" "}
+            <br />
+            <div className="mt-4 rounded-md bg-[#1e1e1e] p-4">
+              <pre className="text-sm text-[#d4d4d4]">
+                <code>{`/* 
+1. Exercise: Concatenate Strings
+Combine these two strings: "I love coding" and "in JavaScript". The output should be: "I love coding in JavaScript".
+*/
+
+/* 
+2. Exercise: String Literals
+Using the variables name = "Alice" and age = 25, print a sentence that says: "Alice is 25 years old".
+*/
+
+/* 
+3. Exercise: Get the Length of a String
+Find the length of the string: "Learn to code with ease".
+*/
+
+
+/* 
+4. Exercise: Extract Characters
+Extract the first and last characters from the string "JavaScript".
+*/
+
+
+/* 
+5. Exercise: Slice a String
+Slice the string "Full Stack Developer" to extract the word "Stack".
+*/
+
+
+/* 
+6. Exercise: Convert to Upper/Lower Case
+Convert "web development" to uppercase and "FRONTEND" to lowercase.
+*/
+
+
+/* 
+7. Exercise: Split a String
+Split the sentence "Learning JavaScript is fun" into an array of words.
+*/
+
+/* 
+8. Exercise: Using Negative Slice
+Using the string "Frontend Developer", extract the word "Developer" using a negative slice.
+*/
+`}</code>
+              </pre>
+              <div className="mt-2 flex justify-end">
+                <Button
+                  variant="secondary"
+                  size="sm"
+                  onClick={() => {
+                    navigator.clipboard.writeText(`/* 
+1. Exercise: Concatenate Strings
+Combine these two strings: "I love coding" and "in JavaScript". The output should be: "I love coding in JavaScript".
+*/
+
+/* 
+2. Exercise: String Literals
+Using the variables name = "Alice" and age = 25, print a sentence that says: "Alice is 25 years old".
+*/
+
+/* 
+3. Exercise: Get the Length of a String
+Find the length of the string: "Learn to code with ease".
+*/
+
+
+/* 
+4. Exercise: Extract Characters
+Extract the first and last characters from the string "JavaScript".
+*/
+
+
+/* 
+5. Exercise: Slice a String
+Slice the string "Full Stack Developer" to extract the word "Stack".
+*/
+
+
+/* 
+6. Exercise: Convert to Upper/Lower Case
+Convert "web development" to uppercase and "FRONTEND" to lowercase.
+*/
+
+
+/* 
+7. Exercise: Split a String
+Split the sentence "Learning JavaScript is fun" into an array of words.
+*/
+
+/* 
+8. Exercise: Using Negative Slice
+Using the string "Frontend Developer", extract the word "Developer" using a negative slice.
+*/
+`);
+                  }}
+                >
+                  Copy
+                </Button>
+              </div>
+            </div>
+            <br />
+            <h2 className="text-xl font-semibold">Answer</h2>
+            <Button onClick={() => setShowAnswer(!showAnswer)}>
+              {showAnswer ? "Hide Answer" : "See Answer"}
+            </Button>
+            <br />
+            {/* The answer is hidden by default and shown when 'showAnswer' is true */}
+            {showAnswer && (
+              <div className="mt-4 rounded-md bg-[#1e1e1e] p-4">
+                <pre className="text-sm text-[#d4d4d4]">
+                  <code>{`/* 
+1. Exercise: Concatenate Strings
+Combine these two strings: "I love coding" and "in JavaScript". The output should be: "I love coding in JavaScript".
+*/
+
+let string1 = "I love coding";
+let string2 = "in JavaScript";
+let result = string1 + " " + string2;
+console.log(result);
+
+/* 
+2. Exercise: String Literals
+Using the variables name = "Alice" and age = 25, print a sentence that says: "Alice is 25 years old".
+*/
+
+let name = "Alice";
+let age = 25;
+let sentence1 = \`\${name} is \${age} years old\`;
+console.log(sentence1);
+
+/* 
+3. Exercise: Get the Length of a String
+Find the length of the string: "Learn to code with ease".
+*/
+
+let sentence2 = "Learn to code with ease";
+let length = sentence2.length;
+console.log(length);
+
+/* 
+4. Exercise: Extract Characters
+Extract the first and last characters from the string "JavaScript".
+*/
+
+let word = "JavaScript";
+let firstChar = word.charAt(0); // or word[0]
+let lastChar = word.charAt(word.length - 1); // or word[word.length - 1]
+console.log(firstChar, lastChar);
+
+/* 
+5. Exercise: Slice a String
+Slice the string "Full Stack Developer" to extract the word "Stack".
+*/
+
+let sentence3 = "Full Stack Developer";
+let slicedWord = sentence3.slice(5, 10);
+console.log(slicedWord);
+
+/* 
+6. Exercise: Convert to Upper/Lower Case
+Convert "web development" to uppercase and "FRONTEND" to lowercase.
+*/
+
+let lowerCase = "web development".toUpperCase();
+let upperCase = "FRONTEND".toLowerCase();
+console.log(lowerCase, upperCase);
+
+/* 
+7. Exercise: Split a String
+Split the sentence "Learning JavaScript is fun" into an array of words.
+*/
+
+let sentence = "Learning JavaScript is fun";
+let words = sentence.split(" ");
+console.log(words);
+
+/* 
+8. Exercise: Using Negative Slice
+Using the string "Frontend Developer", extract the word "Developer" using a negative slice.
+*/
+
+let title = "Frontend Developer";
+let slicedTitle = title.slice(-9);
+console.log(slicedTitle);
+`}</code>
+                </pre>
+                <div className="mt-2 flex justify-end">
+                  <Button
+                    variant="secondary"
+                    size="sm"
+                    onClick={() => {
+                      navigator.clipboard.writeText(`/* 
+1. Exercise: Concatenate Strings
+Combine these two strings: "I love coding" and "in JavaScript". The output should be: "I love coding in JavaScript".
+*/
+
+let string1 = "I love coding";
+let string2 = "in JavaScript";
+let result = string1 + " " + string2;
+console.log(result);
+
+/* 
+2. Exercise: String Literals
+Using the variables name = "Alice" and age = 25, print a sentence that says: "Alice is 25 years old".
+*/
+
+let name = "Alice";
+let age = 25;
+let sentence1 = \`\${name} is \${age} years old\`;
+console.log(sentence1);
+
+/* 
+3. Exercise: Get the Length of a String
+Find the length of the string: "Learn to code with ease".
+*/
+
+let sentence2 = "Learn to code with ease";
+let length = sentence2.length;
+console.log(length);
+
+/* 
+4. Exercise: Extract Characters
+Extract the first and last characters from the string "JavaScript".
+*/
+
+let word = "JavaScript";
+let firstChar = word.charAt(0); // or word[0]
+let lastChar = word.charAt(word.length - 1); // or word[word.length - 1]
+console.log(firstChar, lastChar);
+
+/* 
+5. Exercise: Slice a String
+Slice the string "Full Stack Developer" to extract the word "Stack".
+*/
+
+let sentence3 = "Full Stack Developer";
+let slicedWord = sentence3.slice(5, 10);
+console.log(slicedWord);
+
+/* 
+6. Exercise: Convert to Upper/Lower Case
+Convert "web development" to uppercase and "FRONTEND" to lowercase.
+*/
+
+let lowerCase = "web development".toUpperCase();
+let upperCase = "FRONTEND".toLowerCase();
+console.log(lowerCase, upperCase);
+
+/* 
+7. Exercise: Split a String
+Split the sentence "Learning JavaScript is fun" into an array of words.
+*/
+
+let sentence = "Learning JavaScript is fun";
+let words = sentence.split(" ");
+console.log(words);
+
+/* 
+8. Exercise: Using Negative Slice
+Using the string "Frontend Developer", extract the word "Developer" using a negative slice.
+*/
+
+let title = "Frontend Developer";
+let slicedTitle = title.slice(-9);
+console.log(slicedTitle);
+`);
+                    }}
+                  >
+                    Copy
+                  </Button>
+                </div>
+              </div>
+            )}
           </div>
           <br />
         </div>

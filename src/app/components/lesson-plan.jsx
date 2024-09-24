@@ -26,6 +26,14 @@ export default function LessonPlan() {
               will need to know before building projects.
             </p>{" "}
             <br />
+            <p className="mt-2">
+              Note, we will be working with the terminal (Ill explain later what
+              this is about) in this module, and it may get a little confusing
+              for you. Not because it is difficult but because it is so foreign,
+              and it LOOKS confusing because of that. Well, at least thats how I
+              felt when I first started, but you will get the hang of it.
+            </p>{" "}
+            <br />
             <p>
               As usual, enough with the yapping and let's get straight to it!
             </p>{" "}

@@ -2,6 +2,7 @@
 // SIDE BY SIDE R!
 "use client";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function IntroToCoding() {
   return (
@@ -28,31 +29,60 @@ export default function IntroToCoding() {
           {/* <div className="flex justify-center">
             <ReactPlayer src="/public/intro-bootcamp-video3.mp4" width="100%" />
           </div> */}
-          {/* <div>
+          <div>
             <h2 className="text-xl font-semibold">
-              Here are general principles to follow:
+              How to download VS Code for Windows (the above video showed how to
+              do in on Mac)
             </h2>
+            <br />
             <p className="mt-2">
-              1. You don't need to memorise at all. Understanding is the
-              important bit here. This is not your high school exam.
+              From the video above, from 03:30 to 04:30 , I show how to download
+              VS code for Mac.{" "}
             </p>{" "}
             <br />
-            <p>
-              2. Google and Youtube is your best friend. If you are unsure of
-              something, research it there. This is a crucial skill for
-              developers.
+            <span>
+              For you to download VSCode on Windows, I'd like you to watch this
+              video until 05: 40.
+            </span>{" "}
+            <Link
+              href="https://www.youtube.com/watch?v=naL0cZNQh1g&ab_channel=GeekyScript"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              Click here!
+            </Link>
+            <br />
+            <p className="mt-2">
+              After you have done that, then you can return to my video above
+              and start back from 04:30.
             </p>{" "}
             <br />
-            <p>
-              3. You learn the most by doing projects, eventhough you don't have
-              enough knowledge to do it yet. The best learning is learning on
-              the fly... trust me
-            </p>
+            <h2 className="text-xl font-semibold">
+              What are Extensions on VSCode?
+            </h2>
             <br />
-            <p>
-              4. If you are stuck, that is good. That means you're learning!
-            </p>
-          </div> */}
+            <p className="mt-2">
+              Long story short, extensions makes it easier to code. Think of
+              auto-correct on your phone. When you type out something slightly
+              wrong, it automatically corrects it for you and makes your life
+              easier. That is just one example, but yeah, extensions do the same
+              thing for us when we are coding.
+            </p>{" "}
+            <br />
+            <h2 className="text-xl font-semibold">
+              What are comments on VSCode?
+            </h2>
+            <br />
+            <p className="mt-2">
+              First of all, comments is NOT code. Instead, comments are written
+              to explain code and narrate what you are trying to do with this
+              code. This will be helpful for you (when you want to look back at
+              your code) and will help other people understand your code. You
+              will see later on how important this will be.
+            </p>{" "}
+            <br />
+          </div>
         </div>
       </div>
     </div>

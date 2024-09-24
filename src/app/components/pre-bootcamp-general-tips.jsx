@@ -30,13 +30,31 @@ export default function PreBootcampWelcome() {
             </p>{" "}
             <br />
             <p>
-              3. You learn the most by doing projects, eventhough you don't have
-              enough knowledge to do it yet. The best learning is learning on
-              the fly... trust me
+              3. More important than Google and Youtube is ChatGPT. Man, it is
+              great for learning how to code, but we should not be completely
+              dependant on it, especially at the start. There will be exercises
+              coming later, and for the exercises I highly recommend that you
+              try it out yourself first (as in use that smart brain of yours to
+              tackle the challenges). Only after you have properly tried but
+              still cant get the answer, then its worth asking ChatGPT on how to
+              do it. I cant control how often you use chatGPT, but if you are
+              using it straight away to tackle these challenges, even before you
+              try it out yourself, you will be missing out on a huge part of
+              learning.
+            </p>{" "}
+            <br />
+            <p>
+              4. Ensure you dont just watch/read the material. Actually get your
+              hands dirty and code it out. This build your muscle memory on the
+              important bits. Personally, I made this mistake early on when I
+              learnt to code, so I hope you dont do the same.
             </p>
             <br />
             <p>
-              4. If you are stuck, that is good. That means you're learning!
+              5. If you are stuck, that is good. That means you're learning!
+              Trust me, you will get stuck hahahaha its so frustrating but at
+              the same time so rewarding when you solve that error and get
+              'unstuck'.
             </p>
           </div>
         </div>
