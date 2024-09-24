@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 
 export default function Objects() {
   return (
-    <div className="flex w-full justify-center px-4">
-      <div className="space-y-6">
+    <div className="flex w-full justify-center px-4 overflow-y-scroll py-[5rem] h-[90vh]">
+      <div className="space-y-6 w-[60%]">
         <div className="text-left">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl">
             Objects

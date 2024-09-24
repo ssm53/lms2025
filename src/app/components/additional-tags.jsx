@@ -6,8 +6,8 @@ import Image from "next/image";
 
 export default function AdditionalTags() {
   return (
-    <div className="flex w-full justify-center px-4">
-      <div className="space-y-6">
+    <div className="flex w-full justify-center px-4 overflow-y-scroll py-[5rem] h-[90vh]">
+      <div className="space-y-6 w-[60%]">
         <div className="text-left">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl">
             Let's look at other additional tags!
