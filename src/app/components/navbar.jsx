@@ -27,22 +27,22 @@ export default function Navbar() {
       <nav className="flex items-center gap-4">
         {isLoggedIn ? (
           <>
-            <Link
+            {/* <Link
               href="https://www.heylearn2code.com/"
               target="_blank"
               className="hidden sm:inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/80 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
               prefetch={false}
             >
               Go to HeyLearn2Code Website
-            </Link>{" "}
-            <Link
+            </Link>{" "} */}
+            {/* <Link
               href="/apply-now"
               target="_blank"
               className="hidden sm:inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/80 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
               prefetch={false}
             >
               Apply Now
-            </Link>{" "}
+            </Link>{" "} */}
             <Button
               variant="ghost"
               className="hidden sm:inline-flex"
