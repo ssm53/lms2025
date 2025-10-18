@@ -7,7 +7,7 @@ import { AuthProvider } from "./context/AuthContext"; // Adjust the path if nece
 const nunito = Nunito({ subsets: ["latin"] }); // Initialize Nunito font
 
 export const metadata = {
-  title: "HeyLearn2Code-LMS",
+  title: "Zez Academy -LMS",
   description: "Learning management system for coding bootcamp",
 };
 
