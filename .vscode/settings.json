@@ -1,13 +1,14 @@
 {
   "sqltools.connections": [
     {
+      "ssh": "Disabled",
       "previewLimit": 50,
       "server": "localhost",
       "port": 5443,
       "driver": "PostgreSQL",
-      "name": "lms",
-      "database": "lms-db",
-      "username": "lms"
+      "name": "lms2025dbb",
+      "database": "lms2025db",
+      "username": "lms2025user"
     }
   ]
 }

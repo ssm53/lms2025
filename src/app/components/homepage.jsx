@@ -15,7 +15,7 @@ export default function Homepage() {
         <div className="mx-auto max-w-4xl space-y-8">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-              HeyLearn2Code's Full-Stack Coding Bootcamp Curriculum
+              Zez Academy's Full-Stack & AI Coding Bootcamp Curriculum
             </h1>
             <p className="mt-4 text-xl text-muted-foreground">Let's go!</p>
           </div>
@@ -60,15 +60,15 @@ export default function Homepage() {
               className="inline-flex items-center justify-center rounded-md bg-primary/90 px-6 py-3 text-base font-medium text-primary-foreground shadow-sm transition-colors hover:bg-gray-400 hover:text-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
               prefetch={false}
             >
-              Transition to NextJS
+              All things AI
             </Link>
-            <Link
+            {/* <Link
               href="/ai/intro-to-typescript"
               className="inline-flex items-center justify-center rounded-md bg-primary/90 px-6 py-3 text-base font-medium text-primary-foreground shadow-sm transition-colors hover:bg-gray-400 hover:text-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
               prefetch={false}
             >
               Langchain, typescript and AI chatbot
-            </Link>
+            </Link> */}
           </div>
         </div>
       </main>

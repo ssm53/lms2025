@@ -61,24 +61,29 @@ export default function Navbar() {
               Register
             </Link>{" "} */}
             <Link
-              href="https://www.heylearn2code.com/"
+              href="https://www.zezacademy.com/"
               target="_blank"
               className="hidden sm:inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/80 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
               prefetch={false}
             >
-              Go to HeyLearn2Code Website
+              Go to Zez Academy Website
             </Link>{" "}
-            <Link
+            {/* <Link
               href="/apply-now"
               target="_blank"
               className="hidden sm:inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/80 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
               prefetch={false}
             >
               Apply Now
-            </Link>{" "}
-            <Button variant="ghost" className="hidden sm:inline-flex">
+            </Link>{" "} */}
+            {/* <Button variant="ghost" className="hidden sm:inline-flex">
               Login
-            </Button>
+            </Button> */}
+           <Link href="/sign-in">
+  <Button variant="ghost" className="hidden sm:inline-flex">
+    Login
+  </Button>
+</Link>
           </>
         )}
       </nav>
